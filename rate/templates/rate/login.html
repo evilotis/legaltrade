@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!-- font-family: 'Open Sans', sans-serif; -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel='stylesheet' type='text/css'>
+<link href="{% static 'css/custom.css' %}" rel='stylesheet' type='text/css'>
+<link href="{% static 'css/default.css' %}" rel='stylesheet' type='text/css'>
+<link href="{% static 'css/tab.css' %}" rel='stylesheet' type='text/css'>
+<link rel="icon" href="../css/images/favicon.php">
+<script src="{% static 'js/jquery.js' %}" type='text/javascript'></script>
+<script src="{% static 'js/setting2.js' %}" type='text/javascript'></script>
+<script src="{% static 'js/tab.js' %}" type='text/javascript'></script>
+<script src="{% static 'js/bootstrap.min.js' %}" type='text/javascript'></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body class="loginarea">
+      <div style="text-align:center;">
+ <img class="header__logo-img" src="{% static 'images/logo.png' %}" alt="vasttradeoption" ></a style="float: center;">
+ </div>
+
+
+
+
+
+<div class="form-container-wrap">
+  <div class="form-container login">       
+
+
+
+  <form action="" autocomplete="off" method="POST"  id="loginForm" class="form-validate is-alter">
+    {% csrf_token %}
+      <table width="100%" border=0 cellpadding=4 cellspacing=4>
+        <tr>
+          <td><span class="">
+            <input type="username" name=username value='' class=inpts  placeholder="username" style="width:400px; height: 40px; color: black;">
+            </span></td>
+        </tr>
+        <tr>
+          <td><span class="">
+            <input type=password name=password value='' class=inpts placeholder="Password" style="width:400px;">
+            </span></td>
+        </tr>
+                <tr>
+          <td><input type=submit value="Login" class=sbmt name="submit"></td>
+        </tr>
+        
+<font color='yellow'>Don't have an account? <a href="{% url 'register' %}" class="small_text">Sign Up</a></font></td>
+        </tr>
+      </table>
+
+    </form>
+    {% for message in messages %}
+    <p id="messages">{{message}}</p>
+  </div>
+
+</div>
+<div class="loginfooter">&copy; 2024 vasttradeoption.com All Rights Reserved.</div>
+
+
+      <script src="{% static 'js/spop.min.js' %}"></script> 
+<script src="{% static 'js/magnific-popup.min.js' %}"></script> 
+<script src="{% static 'js/spop.min.js' %}"></script> 
+<script src="{% static 'js/notification.js' %}"></script> 
+<link rel="stylesheet" href="{% static 'css/spop.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'css/style-azaleaf86ef86e.css' %}" id="changeTheme">
+<script src="{% static 'js/jquery.bundlef86e.js' %}"></script>
+<script src="{% static 'js/scriptsf86e.js' %}"></script>
+<script src="{% static 'js/chartsf86e.js' %}"></script>
+    
+    <style type="text/css">
+ 
+.spop {width:100%;}
+.notification_inner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.notification_inner h3 {
+    font-size:18px;
+    margin-bottom:10px;
+}
+.notification_inner h3,
+.notification_inner p {
+    color:#fff;
+}
+.spop .spop-close {
+    right: 6px;
+    top: 10px;
+}
+.notification_inner img {
+    border-radius: 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+    </style>
+
+
+
+ </body>
+ {% endfor %}
+</html> 

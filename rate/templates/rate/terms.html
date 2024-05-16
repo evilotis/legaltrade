@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+{% load static %}
+{% block content %}
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <title>Legal Trade - Bitcoin | Binary | CFD Trading - 100x Leverage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Legal Trade allows you to actively trade most popular cryptocurrencies such as Bitcoin, Ethereum, Ripple, Litecoin and more, profit from market rallies and declines, or hedge your existing cryptocurrency holdings.">
+    <meta name="keywords" content="Legal Trade">
+    <!-- Opengraph-->
+    <meta property="og:title" content="Legal Trade - Bitcoin Trading - 100x Leverage">
+    <meta property="og:description"
+        content="Legal Trade allows you to actively trade most popular cryptocurrencies such as Bitcoin, Ethereum, Ripple, Litecoin and more, profit from market rallies and declines, or hedge your existing cryptocurrency holdings.">
+    <meta property="og:image" content="images/advantages-image.html">
+    <meta property="og:image:width" content="895">
+    <meta property="og:image:height" content="593">
+    <!-- Twitter Card data-->
+    <meta name="twitter:card" content="product">
+    <meta name="twitter:site" content="../../index-2.html">
+    <meta name="twitter:title" content="Legal Trade - Bitcoin Trading - 100x Leverage">
+    <meta name="twitter:description"
+        content="Legal Trade allows you to actively trade most popular cryptocurrencies such as Bitcoin, Ethereum, Ripple, Litecoin and more, profit from market rallies and declines, or hedge your existing cryptocurrency holdings.">
+    <meta name="twitter:creator" content="Legal Trade">
+    <meta name="twitter:image" content="images/advantages-image.html">
+
+    <!-- <link rel="manifest" href="manifest19af.json?rev=c378110ffe0551db73e64c8509d09cd3"> -->
+    <meta name="msapplication-TileColor" content="#010a2e">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.html">
+    <meta name="theme-color" content="#010a2e">
+    <link href="css/common11d211d2.css" rel="stylesheet">
+    <script type="application/ld+json">{ "@context": "https://schema.org/", "@type": "WebSite", "name": "Legal Trade", "url": "https://primexbt.com", "image": "https://primexbt.com/assets/images/advantages-image.png" }
+    </script>
+</head>
+
+<body>
+    <!--    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM7CR6W" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        <p style="margin:0;padding:0;border:0;"><img src="https://a1.adform.net/Serving/TrackPoint/?pm=1733920" width="1" height="1" alt=""></p>
+    </noscript> -->
+    <header class="header">
+        <nav class="header-wrapper container">
+            <div class="header__logo">
+                <a href="{% url 'index' %}"><img class="header__logo-img" src="{% static 'images/logo.png' %}"
+                        alt="Legal Trade "></a>
+            </div>
+            <div class="header__mainmenu">
+                <ul class="mainmenu mainmenu--left-part">
+                    <li class="mainmenu__item mainmenu__item--hoverable">
+                        <div class="mainmenu__link">Products<img class="mainmenu__link-dropdown"
+                                src="{% static 'images/dropdowne058e058.svg' %}"></div>
+                        <ul class="mainmenu__submenu">
+                            <li><a href="{% url 'platform' %}">Legal Trade Platform</a></li>
+                            <li><a href="{% url 'all-trading' %}">All Trading Products</a></li>
+                            <li><a href="{% url 'bitcoin-leverage' %}">Leverage</a></li>
+                            <li><a href="{% url 'long-short-trade' %}">Long/Short Trading</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainmenu__item mainmenu__item--hoverable">
+                        <div class="mainmenu__link">About<img class="mainmenu__link-dropdown"
+                                src="{% static 'images/dropdowne058e058.svg' %}"></div>
+                        <ul class="mainmenu__submenu">
+                            <li><a href="{% url 'about' %}">About Us</a></li>
+                            <li><a href="{% url 'fees' %}">Fees</a></li>
+                            <li><a href="{% url 'security' %}">Security</a></li>
+                            <li><a href="{% url 'terms' %}">Legal Terms</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="mainmenu__item"><a class="mainmenu__link" href="{% url 'parners' %}">Refer &amp; Earn</a></li>
+
+                </ul>
+                <ul class="mainmenu">
+                    <li class="mainmenu__item mainmenu__item--hoverable mainmenu__item--language-selector">
+                        <div class="mainmenu__link">
+                            <!-- <div id="google_translate_element"></div><script type="text/javascript">
+                        function googleTranslateElementInit() {
+                            new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                        }
+                    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+                        </div>
+
+                    </li>
+                    <li class="mainmenu__item mainmenu__link--login"><a class="mainmenu__link"
+                            href="{% url 'login' %}">Login</a></li>
+                    <li><a class="btn mainmenu__register-link" href="{% url 'register' %}">Register</a></li>
+                </ul>
+            </div>
+            <div class="header__burger">
+                <div class="header__burger-icon"></div>
+            </div>
+            <div class="mobmenu">
+                <div class="mobmenu__items">
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'bitcoin-leverage' %}">Leverage</a>
+                    </div>
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'long-short-trade' %}">Long/Short
+                            Trading</a></div>
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'all-trading' %}">All Trading
+                            Products</a></div>
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'platform' %}">Legal Trade
+                            Platform</a></div>
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'partners' %}">Refer &amp; Earn</a>
+                    </div>
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'about' %}">About Us</a></div>
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'security' %}">Security</a></div>
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'fees' %}">Fees</a></div>
+                    <div class="mobmenu__item"><a class="mobmenu__link" href="{% url 'terms' %}">Legal Terms</a></div>
+
+                </div>
+                <div class="mobmenu__account"><a class="mobmenu__account-button mobmenu__account-button--login"
+                        href="{% url 'login' %}">Login</a><a
+                        class="mobmenu__account-button mobmenu__account-button--register"
+                        href="{% url 'register' %}">Register</a></div>
+            </div>
+        </nav>
+    </header>
+    <link href="{% static 'css/legal-terms15e415e4.css' %}" rel="stylesheet">
+
+    <section>
+        <div class="main">
+            <div class="main__content">
+                <div class="main__inner container">
+                    <div class="main__header">
+                        <h1 class="main__title"> Legal Terms</h1>
+                        <h3 class="main__title-3">Legal Trade provides most transparent trading environment and
+                            discloses all terms and conditions in detail</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="prs-container legal-terms-section">
+        <h2 class="prs-title legal-terms-title">Documentation</h2>
+        <p class="prs-text legal-terms-text">This website services are related to and provided by Legal Trade
+            Trading Services Ltd (Seychelles company nr. 206865DE3) and Prime Technologies Ltd. (Saint Vincent and the
+            Grenadines company nr. 206865DE3).</p>
+        <p class="prs-text legal-terms-text" style="margin-bottom: 0">Please find below a comprehensive list of legal
+            documents related to the use of <a href="../../index-2.html">Legal Trademining.com</a> website(s) and
+            services. It is important that you make yourself aware of these and agree to them before using our
+            website(s).</p>
+    </section>
+    <section class="legal-terms-section">
+        <div class="category-selector">
+            <div class="category-selector__radio">
+                <input id="terms-of-use" type="radio" name="term" value="#conds">
+                <label for="terms-of-use">Terms and conditions</label>
+            </div>
+            <div class="category-selector__radio">
+                <input id="privacy-policy" type="radio" name="term" value="#privacy">
+                <label for="privacy-policy">Privacy policy</label>
+            </div>
+            <div class="category-selector__radio">
+                <input id="risk-disclaimer" type="radio" name="term" value="#risk">
+                <label for="risk-disclaimer">Risk disclaimer</label>
+            </div>
+            <div class="category-selector__radio">
+                <input id="cookie-policy" type="radio" name="term" value="#cookie">
+                <label for="cookie-policy">Cookie Policy</label>
+            </div>
+        </div>
+        <section id="conds" style="display: none">
+            <div class="legal-terms-section prs-container">
+                <h2 class="prs-title legal-terms-title">Terms and Conditions</h2>
+                <p class="prs-text legal-terms-text">By accessing, viewing, using or clicking I agree to any of the
+                    services made available on this website, owned and operated by Legal Trade Trading Services Ltd.
+                    (hereinafter referred to as Operator) via address <a
+                        href="../../index-2.html">Legal Trademining.com</a> (hereinafter referred to as Website)
+                    and using the services (hereinafter referred to as Service) provided by Prime Technologies Ltd.
+                    (hereinafter referred to as Service Provider), our mobile applications, or any other related
+                    services you acknowledge that you have read, understand, and unconditionally agree to be bound by
+                    the Terms of this agreement.</p>
+                <p class="prs-text legal-terms-text">The Operator (in the part that affects its activities) or the
+                    Service Provider (in the part that affects its activities) may at any time, without notice, amend
+                    the Terms of this agreement. You agree to continue to be bound by any amended terms and conditions
+                    and that the Operator (in the part that affects its activities) or the Service Provider (in the part
+                    that affects its activities) may at any time, without notice, amend the Terms of this agreement have
+                    no obligation to notify you of such amendments.</p>
+                <p class="prs-text legal-terms-text">You acknowledge that it is your responsibility to periodically
+                    check these Terms of this agreement for changes and that continued use of the Website and Services
+                    offered by the Operator (in the part that affects its activities) or the Service Provider (in the
+                    part that affects its activities) following the posting of any changes to the Terms of this
+                    agreement indicates your acceptance of any such changes. If you do not accept the Terms of this
+                    agreement, do not access this Website and do not use this Service.</p>
+                <p class="prs-text legal-terms-text">This Agreement constitutes the agreement between you (hereinafter
+                    referred to as Customer, You) and the Operator (in the part that affects its activities) and the
+                    Service Provider (in the part that affects its activities). All other information provided on the
+                    Website, as well as oral/written statements made, are excluded from this Agreement.</p>
+                <p class="prs-text legal-terms-text">Subject to the terms and conditions of this Agreement and
+                    acceptance of Customers application to open an account (hereinafter referred to as Account) with
+                    the Service Provider will maintain one or more Accounts in Customers name for Non-Deliverable
+                    Bitcoin settled products trading with and for Customer and provide such other services and products
+                    as the Service Provider may, in its sole discretion, determine from time to time in the future.
+                    Unless expressly stated otherwise in writing, all ?ontracts and other transactions entered into
+                    between the Service Provider and Customer shall be governed by the terms of this Agreement, as
+                    amended from time to time.</p>
+            </div>
+            <div class="legal-terms-section prs-container">
+                <h3 class="legal-terms-subtitle">Interpretation</h3>
+                <p class="prs-text legal-terms-text">In this Agreement unless the opposite is clear from the context the
+                    following rules of interpretation apply:</p>
+                <ol class="prs-text legal-terms-list">
+                    <li>Unless the context otherwise requires, words in the singular shall include the plural and in the
+                        plural shall include the singular;</li>
+                    <li>Unless the context otherwise requires, a reference to one gender shall include a reference to
+                        the other genders.</li>
+                    <li>References to clauses and schedules are to the clauses and schedules of this Agreement and
+                        references to paragraphs are to paragraphs of the relevant schedule;</li>
+                    <li>A reference to any party shall include that partys personal representatives, successors and
+                        permitted assigns.</li>
+                    <li>The term 'including' does not exclude anything not listed;</li>
+                    <li>A reference to a statute or statutory provision is a reference to it as amended, extended or
+                        re-enacted from time to time;</li>
+                    <li>A reference to a statute or statutory provision shall include all subordinate legislation made
+                        from time to time under that statute or statutory provision.</li>
+                    <li>A reference to writing or written includes e-mail.</li>
+                    <li>Any obligation on a party not to do something includes an obligation not to allow that thing to
+                        be done.</li>
+                    <li>Any words following this Agreement including, include, in particular, for example or any similar
+                        expression shall be construed as illustrative and shall not limit the sense of the words,
+                        description, definition, phrase or term preceding or following that agreement.</li>
+                    <li>Headings of sections are for convenience only and shall not be used to limit or construe such
+                        sections. All the sections in this Agreement shall survive any termination or expiration of this
+                        Agreement.</li>
+                    <li>Certain statements in this Agreement and informational documents on this Website constitute
+                        forward-looking information under applicable laws. Except for statements of historical fact,
+                        information contained herein may constitute forward-looking statements. When used in this
+                        Agreement, the words may, will, should, project, anticipate, believe, estimate,
+                        intend, expect, continue, and similar expressions or the negatives thereof are generally
+                        intended to identify forward-looking statements. Forward looking statements are not guarantees
+                        of future performance, and undue reliance should not be placed on them. Such forward-looking
+                        statements necessarily involve known and unknown risks and uncertainties, which may cause market
+                        projections and financial results in future periods to differ materially from any projections of
+                        future performance or result expressed or implied by such forward looking statements. Although
+                        forward-looking statements contained herein are based upon what management believes may be
+                        reasonable assumptions, forward-looking statements may prove to be inaccurate, as actual results
+                        and future events could differ materially from those anticipated in such statements. The
+                        Operator (in the part that affects its activities) or the Service Provider (in the part that
+                        affects its activities) expressly disclaims any obligation or undertaking to disseminate any
+                        updates or revisions to any forward-looking statement contained herein to reflect any change in
+                        its expectation with regard thereto or any change in events, conditions, or circumstances on
+                        which any such statement is based.</li>
+                </ol>
+            </div>
+            <div class="legal-terms-section prs-container">
+                <h3 class="legal-terms-subtitle">Definitions</h3>
+                <p class="prs-text legal-terms-text"><strong>Agreement</strong> - Terms and Conditions and any other
+                    rules, policies or procedures that may be issued by published from time to time on the Website.</p>
+                <p class="prs-text legal-terms-text"><strong>Actions</strong> - Any Customers instructions received
+                    through the Website</p>
+                <p class="prs-text legal-terms-text"><strong>Applicable Law</strong> - Law applicable under this
+                    Agreement to any and all relations between the Customer and the Operator (in the part that affects
+                    its activities) or the Service Provider (in the part that affects its activities)</p>
+                <p class="prs-text legal-terms-text"><strong>Customer</strong> - the person who has completed the
+                    Registration form and whose application the Service Provider has accepted. The Service Provider
+                    reserves its right to set forth at any time and upon its own discretion special eligibility
+                    conditions or other requirements to certain persons as a Customer.</p>
+                <p class="prs-text legal-terms-text"><strong>Data</strong> - any data input by You or with Your
+                    authority into the Website.</p>
+                <p class="prs-text legal-terms-text"><strong>Intellectual Property Rights</strong> - Any invention,
+                    patent, utility model right, copyright and related right, registered design, unregistered design
+                    right, trade mark, trade name, internet domain name, design right, design, service mark, database
+                    rights, topography rights, rights in get-up and trade dress, rights in goodwill or to sue for
+                    passing off and any other rights of a similar nature or other industrial or intellectual property
+                    rights owned or used by the Operator (in the part that affects its activities) and the Service
+                    Provider (in the part that affects its activities) in any part of the world whether or not any of
+                    the same is registered (or capable of registration), including applications and the right to apply
+                    for and be granted, extensions or renewals of and rights to claim priority from, such rights and all
+                    equivalent or similar rights or protections which subsist now or will subsist in the future.</p>
+                <p class="prs-text legal-terms-text"><strong>Non-Deliverable Bitcoin Settled Products</strong> 
+                    products available for trading on the platform and may be named as CFDs, Forex, Indices and
+                    Cryptocurrencies for information and marketing purposes. Non-Deliverable Bitcoin settled products
+                    trading services are provided by Prime Technologies Ltd.</p>
+                <p class="prs-text legal-terms-text"><strong>Operator</strong>  Legal Trade Group licensed by FCA
+                    in the United Kingdom (Trading Point of Financial Instruments UK Limited), ASIC in Australia
+                    (Trading Point of Financial Instruments Pty Limited), the IFSC in Belize (Dynamic Trade Options
+                    Global Limited) and by CySEC in Cyprus (Trading Point of Financial Instruments Ltd)</p>
+                <p class="prs-text legal-terms-text"><strong>Service Provider</strong>  Prime Technologies Ltd. a
+                    company incorporated under the Business Companies Act of the laws of The United Kingdom.</p>
+                <p class="prs-text legal-terms-text"><strong>Service</strong>  means all services made available (as
+                    may be changed or updated from time to time by the Service Provider) via the Website.</p>
+                <p class="prs-text legal-terms-text"><strong>Website</strong>  A group of interrelated websites owned
+                    and operated by Legal Trade Trading Services Ltd., available in the Internet via address <a
+                        href="../../index-2.html">Legal Trademining.com</a>.</p>
+                <p class="prs-text legal-terms-text"><strong>User</strong>  means any person, who uses the Website via
+                    address <a href="../../index.html">Legal Trademining.com</a>.</p>
+            </div>
+            <div class="prs-container">
+                <ol class="legal-terms-sections-list">
+                    <li>
+                        <h3>Eligible Customers</h3>
+                        <ol>
+                            <li>By registering as a Customer You covenant, represent, and warrant that (under the
+                                Applicable Law and law of the country of Your residence):
+                                <ol>
+                                    <li>that You have accepted the Terms and Conditions; and</li>
+                                    <li>that You are of an age of majority to enter into this Agreement (at least 18
+                                        years of age), meets all other eligibility criteria and residency requirements,
+                                        and is fully able and legally competent to use the Website, enter into agreement
+                                        with the Service Provider and in doing so will not violate any other agreement
+                                        to which You are a party;</li>
+                                    <li>that You are the legal owner of the funds you add to Your account with the
+                                        Service Provider and that the same funds derive from a legitimate and legal
+                                        source;</li>
+                                    <li>that using Services does not constitute a breach of your home jurisdictions
+                                        laws;</li>
+                                    <li>that You are aware of the risks in using the services provided by the Service
+                                        Provider. These risks include the fact that You may lose all of the funds in
+                                        your trading account if the market moves against You or in the case of failures,
+                                        technical malfunctions of the site and other technical malfunctions, failures in
+                                        the supply of quotations, force majeure etc.</li>
+                                    <li>that You will not be involved with, or initiate any form of market manipulation,
+                                        including spoofing orders or otherwise under the threat of blocking the account
+                                        in any case of identifying such violations;</li>
+                                    <li>that if we require any KYC-procedure You will provide correct, genuine and
+                                        up-to-date information or documents;</li>
+                                    <li>that any withdrawal address You provide is You are own and that You are full
+                                        control over this address;</li>
+                                    <li>You are not allowed to access or use the Services if you are located,
+                                        incorporated or otherwise established in, or a citizen or resident of: the
+                                        United States of America, the province of Québec in Canada, Algeria, Ecuador,
+                                        Ethiopia, Cuba, Crimea and Sevastopol, Iran, Syria, North Korea or Sudan; any
+                                        state, country or other jurisdiction that is embargoed by the United States of
+                                        America; a jurisdiction where it would be illegal according to Applicable Law
+                                        for you (by reason of your nationality, domicile, citizenship, residence or
+                                        otherwise) to access or use the Services; or where the publication or
+                                        availability of the Services is prohibited or contrary to local law or
+                                        regulation, or could subject Services Provider to any local registration or
+                                        licensing requirements (together, the "Restricted Jurisdictions"). We may, in
+                                        our sole discretion, implement controls to restrict access to the Services in
+                                        any of the Restricted Jurisdictions. If we determine that you are accessing the
+                                        Services from any Restricted Jurisdiction, or have given false representations
+                                        as to your location of incorporation, establishment, citizenship or place of
+                                        residence, we reserve the right to close any of your accounts immediately and
+                                        liquidate any open positions.</li>
+                                </ol>
+                            </li>
+                            <li>When accessing and using the Service, You must:
+                                <ol>
+                                    <li>not attempt to undermine the security or integrity of the Service Provider
+                                        computing systems or networks or, where the Services are hosted by a third
+                                        party, that third partys computing systems and networks;</li>
+                                    <li>not use, or misuse, the Services in any way which may impair or alter the
+                                        functionality of the Services or Website, or other systems used to deliver the
+                                        Services or impair or alter the ability of any other user to use the Services or
+                                        Website;</li>
+                                    <li>not attempt to gain unauthorized access to the computer system and servers on
+                                        which the Website is hosted or to any materials other than those to which you
+                                        have been given permission to access;</li>
+                                    <li>not transmit or input into the Website any files that may damage any other
+                                        persons computing devices or software; content that may be offensive; or
+                                        material or Data in violation of any law (including Data or other material
+                                        protected by copyright or trade secrets which you do not have the right to use);
+                                    </li>
+                                    <li>not attempt to modify, copy, adapt, reproduce, disassemble, decompile or reverse
+                                        engineer any computer programs used to deliver the Services or to operate the
+                                        Website except as is strictly necessary to use either of them for normal
+                                        operation.</li>
+                                </ol>
+                            </li>
+                            <li>You will ensure that all usernames and passwords required to access the Website are kept
+                                secure and confidential, and that it is Your responsibility alone ensure this. You will
+                                immediately notify the Service Provider of any unauthorized use of Your passwords or any
+                                other breach of security and the Service Provider will reset Your password and take
+                                other steps to ensure the security of your account and the platform.</li>
+                            <li>It is your responsibility entirely to provide us with correct details including Your
+                                withdrawal address. We accept no liability resulting in You not receiving withdrawal
+                                funds due to You providing incorrect or out-of-date details. The Service Provider
+                                excludes all liability for any incorrect transactions to wrong addresses, or any other
+                                such mistakes.</li>
+                            <li>The Service Provider reserves the right at any time to verify Your identity for the
+                                purposes of complying with the any KYC/AML requirements</li>
+                            <li>The Service Provider reserves the right to impose trading limits and withdrawal limits
+                                before You are required to conduct Customer Due Diligence (CDD). You agree to cooperate
+                                fully with us throughout this process and that You will provide all
+                                documentation/information that we may require in order to verify Your identity and to
+                                assess the purpose of the business relationship.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Service Performance</h3>
+                        <ol>
+                            <li>From the date on which Your Account is activated, the Service Provider will:
+                                <ol>
+                                    <li>Receive and transmit orders on Actions.</li>
+                                    <li>Execute orders on Actions.</li>
+                                    <li>Provide for safekeeping and administration of Actions for the account of
+                                        Customers, including Non-Deliverable Bitcoin settled products trading and
+                                        related Services.</li>
+                                    <li>Provide investment Research and financial analysis</li>
+                                </ol>
+                            </li>
+                            <li>The Customer acknowledges that the Services do not include the provision of investment
+                                advice. Any investment information as may be announced by the Service Provider to the
+                                Customer does not constitute investment advice but merely aims to assist in investment
+                                decision making.</li>
+                            <li>The Customer agrees and acknowledges that he/she/it is solely responsible for any
+                                investment strategy, transaction or investment composition of any account and taxation
+                                consequences and he shall not rely, for this purpose on the Service Provider. It is also
+                                understood and accepted that the Service Provider shall bear absolutely no
+                                responsibility, regardless of the circumstances, for any such investment strategy,
+                                transaction, investment or information.</li>
+                            <li>The Service Provider may, from time to time in its absolute discretion, withdraw all or
+                                any part of the Services on a temporary or permanent basis.</li>
+                            <li>Customer authorizes the Service Provider to purchase and sell Non-Deliverable Bitcoin
+                                settled products for Customers Account in accordance with Customers instructions
+                                received through the Website, subject to the terms of this Agreement.</li>
+                            <li>Customer agrees to be conclusively responsible for any instruction received
+                                electronically (including, but not limited to, any Order) that is identified with
+                                Customers password and Account number to the Service Provider from persons that the
+                                Service Provider, in its sole judgment, believes are apparently authorized by the
+                                Customer.</li>
+                            <li>Pricing Information. The Service Provider will make available, by posting on the
+                                Website, Bid Prices and Ask Prices at which the Service Provider is prepared to offer
+                                the Customer to buy or sell Non-Deliverable Bitcoin settled products at. The Service
+                                Provider expects that these prices will be reasonably related to the bid prices and ask
+                                prices available in the market at that time for similar transactions, but a number of
+                                factors, such as communication system delays, high volume or volatility can result in
+                                deviations between prices quoted by the Service Provider and other sources. The Service
+                                Provider makes no warranty, express or implied, that Bid Prices and Ask Prices represent
+                                prevailing bid prices and ask prices. If the Customer loses his funds due to the
+                                difference in quotations, the Service Provider is not responsible for this.</li>
+                            <li>Order Execution. The Service Provider will attempt to execute all Orders that it may, in
+                                its sole discretion, accept from Customer in accordance with Customers instructions
+                                received through the Website. In cases where the prevailing market represents prices
+                                different from the prices the Service Provider has posted on its Website, the Service
+                                Provider will attempt, on a best efforts basis, to execute trades on or close to the
+                                prevailing market prices. This may or may not adversely affect Customer realized and
+                                unrealized gains and losses.</li>
+                            <li>Customer acknowledges, understands and agrees that the Service Provider is not acting as
+                                an agent, advisor or in any fiduciary capacity. Notwithstanding the provisions of this
+                                paragraph, Customer acknowledges, understands and agrees that orders can be executed at
+                                prices different from those that the Customer sees on the Website.</li>
+                            <li>Trade Matching. The Service Provider or its affiliates may determine to route Customers
+                                orders to a trade matching system operated by third parties. In that event, the Service
+                                Provider and/or any one or more of its affiliates, shall have the right (but not an
+                                obligation), in the sole discretion of the Service Provider or any such affiliate, to
+                                act for its own account, and as a counterparty or as a broker to Customers in the making
+                                of markets, including without limitation, over any trade matching network in use by
+                                Customers and/or the general public.</li>
+                            <li>Position & Trading Limits. The Service Provider reserves the right to limit the number
+                                of Open Positions that Customer may enter or maintain in Customers Account. The Service
+                                Provider reserves the right, in its sole discretion, to refuse to accept any Order
+                                opening a new position or increasing an Open Position.</li>
+                            <li>The Customer is liable for all the trading losses that occurred due to voluntary or
+                                involuntary, but due to the Customers fault, provision of access to the trading
+                                platform to the third parties</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Margin Requirements</h3>
+                        <ol>
+                            <li>Customer shall provide to and maintain with the Service Provider margin funds in such
+                                amounts, and within such limits as the Service Provider, in its sole discretion, may
+                                from time to time require in order to provide Service. The Service Provider may change
+                                margin requirements at any time, without prior notice to Customer: (x) any time
+                                Customers margin balance falls below the Service Provider minimum margin requirement as
+                                applied to that Account; and (y) any time the Service Provider, in its sole discretion,
+                                believes that it is prudent to do so. The Service Provider may at any time liquidate
+                                Customers open positions or withdraw funds from the Customers account without notice:
+                                (x) to ensure that actual margin equals or exceeds required margin; and (y) to satisfy
+                                any payment obligation to the Service Provider, including commissions, margin financing
+                                and other costs in respect of Customers Account.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Commissions, Margin Financing and Other Costs</h3>
+                        <ol>
+                            <li>The Customer shall be obliged to pay the Service Provider the commissions, margin
+                                financing and other costs set out on the Website. The Service Provider will display all
+                                current commissions, margin financing and other costs on its Website.</li>
+                            <li>The Service Provider may vary commissions, margin financing and other costs from time to
+                                time and shall provide Customers with notice thereof. All changes in commissions, margin
+                                financing and other costs are displayed on the Website.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Intellectual property</h3>
+                        <ol>
+                            <li>The Website and the copyright in all software on the Website is entirely owned by the
+                                Operator including all trademarks on the Website. All text, graphics, images and any
+                                other materials on the Website is entirely owned by the Service Provider. Materials on
+                                this Website may only be used for personal use and non-commercial purposes.</li>
+                            <li>You may digitally display or print extracts from the Website for the above-stated
+                                purpose, only under the condition that You retain any copyright and other proprietary
+                                notices or any the Operators and the Service Providers trademarks or logos, as shown
+                                on the initial printout or download without digital or physical alteration, addition or
+                                deletion. Except as expressly stated herein, You may not without the Operators and the
+                                Service Providers prior written permission alter, modify, reproduce, distribute or use
+                                in any other commercial context any copyrighted materials from the Website.</li>
+                            <li>You acknowledge that the Operators and the Service Providers logos are trademarks. You
+                                may only use and/or reproduce such trademarks without physical or digital alteration on
+                                material downloaded from this Website to the extent authorized above, but You may not
+                                otherwise use, copy, adapt, change, or erase them.</li>
+                            <li>You shall not under any circumstances obtain any rights over or in respect of the
+                                Website (other than rights to use the Website pursuant to these Terms and any other
+                                terms and conditions governing a particular service or section of the Website) or hold
+                                yourself out as having any such rights over or in respect to the Website.</li>
+                            <li>All intellectual property rights relating to all the material used on the Website
+                                including, but not limited to, design, structure, layouts, graphical images and
+                                underlying source code belongs the Operator (in the part that affects its activities)
+                                and the Service Provider (in the part that affects its activities). All rights are
+                                reserved.</li>
+                            <li>You acknowledge that, except as otherwise agreed between the parties in writing, all
+                                intellectual property rights of the Operator (in the part that affects its activities)
+                                and the Service Provider (in the part that affects its activities).</li>
+                            <li>By submitting content to any public area of the Website, including blogs, message
+                                boards, and forums, you grant the Operator (in the part that affects its activities) and
+                                the Service Provider (in the part that affects its activities) a royalty-free,
+                                perpetual, irrevocable, non-exclusive right and license to use, reproduce, modify,
+                                adapt, publish, translate, create derivative works from, distribute, communicate to the
+                                public, perform and display the content (in whole or in part) worldwide and to
+                                incorporate it in other works in any form, media, or technology now known or later
+                                developed, for the full term of any rights that may exist in such content. You also
+                                permit any subscriber to access, display, view, store and reproduce such content for
+                                personal use.</li>
+                            <li>By submitting any content to the Website You warrant that You are entitled to and have
+                                all necessary intellectual property rights over that content.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Third Party Websites</h3>
+                        <ol>
+                            <li>Any links to third party websites that are not affiliated or associated with the
+                                Operator or the Service Provider (although the Operators or the Service Providers
+                                branding, advertisements or links may appear on these websites) and the Operator may
+                                send e-mail messages to you containing advertisements or promotions including links to
+                                third parties. The Operator makes no representation as to the quality, suitability,
+                                functionality or legality of the material on third party websites that are linked to, or
+                                to any goods and services available from such websites. The material is only provided
+                                for your interest and convenience. The Operator does not monitor or investigate such
+                                third-party websites and the Operator accepts no responsibility or liability for any
+                                loss arising from the content or accuracy of this material and any opinion expressed in
+                                the material should not be taken as an endorsement, recommendation or opinion of the
+                                Operator.</li>
+                            <li>Under no circumstances are you to create a hyperlink to any of the pages on the Website,
+                                without obtaining prior consent to do so from the Operator. If You do create a link to
+                                any of the pages on the Website, You acknowledge that You are responsible for all direct
+                                or indirect consequences of the link, and you indemnify the Operator for all loss,
+                                liability, costs, damages, or expense arising from or in connection with the link.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Warranties and Representations</h3>
+                        <ol>
+                            <li>You acknowledge that:
+                                <ol>
+                                    <li>You are authorized to access and use the Website; In particular, the
+                                        jurisdiction where you reside, hold citizenship, or conduct business allows You
+                                        to utilize Services;</li>
+                                    <li>Your use of the Website and the Service is at Your own risk. You agree that the
+                                        Operator (in the part that affects its activities) or the Service Provider (in
+                                        the part that affects its activities) are not liable for any damages or harms
+                                        arising out of Your use of the Website and Service;</li>
+                                    <li>The information provided on the Website is for general information purposes only
+                                        and is given in good faith, You must only act upon such information at Your own
+                                        risk, knowing that the Operator (in the part that affects its activities) or the
+                                        Service Provider (in the part that affects its activities) will not be held
+                                        liable for any resulting losses or damages. The information is selective and the
+                                        Operator (in the part that affects its activities) or the Service Provider (in
+                                        the part that affects its activities) may not verify all information, which may
+                                        not be complete or accurate for Your purposes and should not be relied upon
+                                        without further enquiry. The information should not be construed as a
+                                        recommendation to trade or engage the Service provided by the Service Provider
+                                        in a particular manner; and</li>
+                                    <li>The Operator does not warrant that the use of the Website will be uninterrupted
+                                        or error free. Among other things, the operation and availability of the systems
+                                        used for accessing the Website, including public telephone services, computer
+                                        networks and the Internet, can be unpredictable and may from time to time
+                                        interfere with or prevent access to the Website. The Operator (in the part that
+                                        affects its activities) or the Service Provider (in the part that affects its
+                                        activities) are not in any way responsible for any such interference that
+                                        prevents Your access or use of the Website and the Service. The Operator (in the
+                                        part that affects its activities) or the Service Provider (in the part that
+                                        affects its activities) are not responsible for any losses, expenses, costs, or
+                                        damages resulting from interruptions, errors, or interferences.</li>
+                                    <li>The Operator gives no warranty about the Website. Without limiting the
+                                        foregoing, the Operator does not warrant that the Website will meet Your
+                                        requirements or that it will be suitable for your purposes. To avoid doubt, all
+                                        implied conditions or warranties are excluded insofar as is permitted by law
+                                        including, without limitation, warranties of merchantability, fitness for
+                                        purpose, title and non-infringement.</li>
+                                    <li>You warrant and represent that You are acquiring the right to access and use the
+                                        Website and agreeing to these Terms for the purposes of a business and that, to
+                                        the maximum extent permitted by law, any statutory consumer guarantees, or
+                                        legislation intended to protect non-business consumers in any jurisdiction does
+                                        not apply to the supply of the Website or these Terms.</li>
+                                    <li>Customer does not intend to hinder, delay or defraud the Service Provider or any
+                                        other Customers of the Website or engage in any illegal conduct and or unlawful
+                                        activity in relation to money laundering, receiving the proceeds of drug
+                                        trafficking or terrorist activities; receiving the proceeds of criminal
+                                        activities, terrorist activities or trading with such countries as might from
+                                        time to time be subject to any embargo imposed by the Security Council of the
+                                        United Nations, the European Union or in any place of the world.</li>
+                                    <li>The Operator denies all liability for the operation and reliability of the
+                                        Website when used within an Internet environment, where you or a third party is
+                                        providing the computer equipment and/or internet services upon which the product
+                                        is dependent upon for any part of its functionality.</li>
+                                    <li>By using this Service You confirm that You understand that the timely operation
+                                        of the Internet and the World Wide Web is governed by constraints beyond the
+                                        control of the Service Provider You accept that Service Provider is not liable
+                                        for any perceived slow operation of the Website, or any damages or losses that
+                                        could result from slow operation of the Website.</li>
+                                    <li>By using this Service You accept that all trade executions are final and
+                                        irreversible, and that the Service Provider is not liable for the results of any
+                                        trades/executions.</li>
+                                    <li>By using this Service You accept that the Service Provider reserves the right to
+                                        liquidate any trades at any time regardless of the profit or loss position.</li>
+                                    <li>The Service Provider does not warrant that the Service will meet Your
+                                        requirements; that the Service will be uninterrupted, timely, secure, or
+                                        error-free; that the information provided through the Service is accurate,
+                                        reliable or correct; that any defects or errors will be corrected, or that the
+                                        Service will be available at any particular time or location. You assume full
+                                        responsibility and risk of loss resulting from your use of the Service, and the
+                                        Service Provider is not liable for any resulting losses or damages.</li>
+                                    <li>It is our responsibility to maintain an orderly market and as such we may at our
+                                        own discretion halt trading on the Website or limit access to the Website due to
+                                        market disruption, service maintenance or any other relevant events. We exclude
+                                        all liability for any claimed losses or profits lost as a result of us halting
+                                        trading.</li>
+                                    <li>Some jurisdictions do not allow the exclusion of certain warranties or
+                                        disclaimer of implied Agreement in contracts with consumers, so some or all of
+                                        the exclusions of warranties and disclaimers in this section may not apply to
+                                        the Customer.</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Limitation Of Liability</h3>
+                        <ol>
+                            <li>To the fullest extent permitted by applicable law:
+                                <ol>
+                                    <li>In no event will the Service Provider or any of the Service Provider parties be
+                                        liable for any indirect, special, incidental, consequential or exemplary damages
+                                        of any kind (including, but not limited to, where related to loss of revenue,
+                                        income or profits, loss of use or data, or damages for business interruption)
+                                        arising out of or in any way related to the form of action, whether based in
+                                        contract, tort (including, but not limited to, simple negligence, whether
+                                        active, passive or imputed), or any other legal or equitable theory (even if the
+                                        Customer has been advised of the possibility of such damages and regardless of
+                                        whether such damages were foreseeable); and</li>
+                                    <li>In no event will the Service Provider and the Service Provider parties (jointly)
+                                        aggregate liability, whether in contract, warranty, tort (including negligence,
+                                        whether active, passive or imputed), or other theory, arising out of or relating
+                                        to this Agreement;</li>
+                                    <li>The Parties shall be responsible for compliance with terms and conditions, for
+                                        fulfillment of the Customers commitments and guarantees in the manner and in the
+                                        amount prescribed by this Agreement, in particular:
+                                        <ol>
+                                            <li>In case of filing accusations, claims or lawsuits to the Service
+                                                Provider related to non-compliance by the Customer engagements, the
+                                                Customer agrees to solve such claims or actions on his own and at his
+                                                own expense, as well as fully compensate the Service Providers
+                                                documented proven losses, court fees, legal costs, incurred in
+                                                connection with the refusal of the Customer or untimely fulfillment of
+                                                his obligations by the Customer.</li>
+                                            <li>In case of the Customers violation of his obligations of this
+                                                Agreement, the Service Provider reserves the right to:
+                                                <ol>
+                                                    <li>demand full compensation from the Customer for losses caused by
+                                                        every violation;</li>
+                                                    <li>bring a case before a court if the compensation doesn't cover
+                                                        the Service Providers loss;</li>
+                                                    <li>release the information relating to the Customer identity and
+                                                        location to any authorized officer in accordance with applicable
+                                                        law.</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>If Applicable law does not allow all or any part of the above limitation of liability to
+                                apply to the Customer the limitations will apply to the Customer only to the extent
+                                permitted by Applicable law. Customer understand and agree that it is his/her/its
+                                obligation to ensure compliance with any legislation relevant to his/her/its country of
+                                domicile concerning use of the Website.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Termination & Remedies for Breach of these Terms by You</h3>
+                        <ol>
+                            <li>The Service Provider reserve the right at our own discretion to close Your Account with
+                                at least 24-hour notice. If at the expiry of that period, your positions are still open,
+                                the Service Provider will close them.</li>
+                            <li>The Service Provider may freeze any Account in the event that the Service Provider
+                                suspect or have evidence that You are engaged in suspicious trading or other activity or
+                                have breached any of the above terms or warranties. This may result in the unwinding of
+                                any trades You have entered into, including the liquidation of any open positions. The
+                                Service Provider expressly exclude any losses or profits You would have made as a result
+                                of us closing Your trade positions early or You not being able to trade on the Website
+                                and You agree to indemnify the Service Provider completely against any third-party
+                                action resulting from Your conduct or us having to close Your positions early. While
+                                Your Account is frozen the Service Provider will investigate and may require You to
+                                cooperate with our enquiries. During the investigation stage You may not be able to make
+                                deposits or withdrawals to your Account nor will You be able to trade or open any new
+                                positions. At the end of the investigation the Service Provider may, at our own
+                                discretion, decide to close Your Account for which we are not required to provide You
+                                with any reasons for the same.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Absence of Waiver</h3>
+                        <ol>
+                            <li>Any failure or delay the Operator (in the part that affects its activities) and the
+                                Service Provider (in the part that affects its activities) to enforce any of the terms
+                                or to exercise any right under the Agreement will not be construed as a waiver to any
+                                extent of our rights.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Applicable Law</h3>
+                        <ol>
+                            <li>All questions concerning the construction, validity, enforcement and interpretation of
+                                this Agreement shall be governed by and construed and enforced in accordance with the
+                                laws of Saint Vincent and the Grenadines.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Force Majeur</h3>
+                        <ol>
+                            <li>To resolve any dispute, controversy or claim between the Customer and the Operator (in
+                                the part that affects its activities) and the Service Provider (in the part that affects
+                                its activities) shall be held harmless for partial or absolute default on their
+                                respective obligations under the Agreement, if such default is caused by the
+                                circumstances of insuperable force that occurred after execution of the terms and
+                                conditions as result of extraordinary events, i.e. natural disasters, epidemics, fires,
+                                floods, explosions, military activities.</li>
+                            <li>The Customer or the Operator (in the part that affects its activities) and the Service
+                                Provider (in the part that affects its activities) affected by the circumstances of
+                                insuperable force shall, within five (5) business days, notify the Customer or the
+                                Operator (in the part that affects its activities) and the Service Provider (in the part
+                                that affects its activities) on such circumstances providing independent evidence of
+                                existence of the circumstances of insuperable force issued by a relevant government or
+                                administrative authorities.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Dispute Resolution</h3>
+                        <ol>
+                            <li>Arising out of or relating to this Agreement or the breach thereof, the Parties agree
+                                first to negotiate the issue in good faith for a period of not less than thirty (30)
+                                days following written notification of such controversy or claim to the other Party.
+                            </li>
+                            <li>If the negotiations do not resolve the dispute, controversy or claim to the reasonable
+                                satisfaction of all Parties during such period, then the Parties irrevocably and
+                                unconditionally submit to the respective claim to the binding arbitration administered
+                                by the competent court of Saint Vincent and the Grenadines in accordance with the rules
+                                of the arbitral tribunal, in English language, in writing on the basis of the documents
+                                submitted.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Severability</h3>
+                        <ol>
+                            <li>If any term, provision, covenant or restriction of this Agreement is held by a court of
+                                competent jurisdiction to be invalid, illegal, void or unenforceable, the remainder of
+                                the Agreement, provisions, covenants and restrictions set forth herein shall remain in
+                                full force and effect and shall in no way be affected, impaired or invalidated, and the
+                                parties hereto shall use their commercially reasonable efforts to find and employ an
+                                alternative means to achieve the same or substantially the same result as that
+                                contemplated by such term, provision, covenant or restriction. It is hereby stipulated
+                                and declared to be the intention of the parties that they would have executed the
+                                remaining terms, provisions, covenants and restrictions of the Agreement without
+                                including any of such that may be hereafter declared invalid, illegal, void or
+                                unenforceable.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h3>Other Conditions</h3>
+                        <ol>
+                            <li>The English version of this Agreement shall prevail in case of differences in
+                                translation.</li>
+                            <li>Any notice or other communication under this Agreement shall be in writing and shall be
+                                considered given and received when sent by email. The Customers official email for
+                                communication shall be deemed the email specified by the Customer during the
+                                registration on the Website. The language of the communication shall be English.</li>
+                            <li>Except as otherwise provided in this Agreement, this Agreement and the rights and
+                                obligations of the parties hereunder will be binding upon and inure to the benefit of
+                                their respective successors, assigns, heirs, executors, administrators and legal
+                                representatives. Operator and the Service Provider may assign any of its rights and
+                                obligations under this Agreement. No other party to this Agreement may assign, whether
+                                voluntarily or by operation of law, any of its rights and obligations under this
+                                Agreement, except with the prior written consent of the Service Provider.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div class="prs-container legal-terms-section">
+                <h2 class="prs-title legal-terms-title">RISK DISCLOSURE STATEMENT</h2>
+                <p class="prs-text legal-terms-text">TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, THE SERVICES,
+                    THE SERVICES PROVIDER MATERIALS AND ANY PRODUCT, SERVICE OR OTHER ITEM PROVIDED BY OR ON BEHALF OF
+                    SERVICES PROVIDER ARE PROVIDED ON AN AS IS AND AS AVAILABLE BASIS AND SERVICES PROVIDER
+                    EXPRESSLY DISCLAIMS, AND YOU WAIVE, ANY AND ALL OTHER WARRANTIES OF ANY KIND, WHETHER EXPRESS OR
+                    IMPLIED, INCLUDING, WITHOUT LIMITATION, IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+                    PARTICULAR PURPOSE, TITLE OR NON-INFRINGEMENT OR WARRANTIES ARISING FROM COURSE OF PERFORMANCE,
+                    COURSE OF DEALING OR USAGE IN TRADE. WITHOUT LIMITING THE FOREGOING, SERVICES PROVIDER DOES NOT
+                    REPRESENT OR WARRANT THAT THE SITE, THE SERVICES OR SERVICES PROVIDER MATERIALS ARE ACCURATE,
+                    COMPLETE, RELIABLE, CURRENT, ERROR-FREE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. SERVICES
+                    PROVIDER DOES NOT GUARANTEE THAT ANY ORDER WILL BE EXECUTED, ACCEPTED, RECORDED OR REMAIN OPEN.
+                    EXCEPT FOR THE EXPRESS STATEMENTS SET FORTH IN THIS AGREEMENT, YOU HEREBY ACKNOWLEDGE AND AGREE THAT
+                    YOU HAVE NOT RELIED UPON ANY OTHER STATEMENT OR UNDERSTANDING, WHETHER WRITTEN OR ORAL, WITH RESPECT
+                    TO YOUR USE AND ACCESS OF THE SERVICES. WITHOUT LIMITING THE FOREGOING, YOU HEREBY UNDERSTAND AND
+                    AGREE THAT SERVICES PROVIDER WILL NOT BE LIABLE FOR ANY LOSSES OR DAMAGES ARISING OUT OF OR RELATING
+                    TO: (A) ANY INACCURACY, DEFECT OR OMISSION OF PRICE DATA, (B) ANY ERROR OR DELAY IN THE TRANSMISSION
+                    OF SUCH DATA, (C) INTERRUPTION IN ANY SUCH DATA AND (D) ANY DAMAGES INCURRED BY ANOTHER USERS
+                    ACTIONS, OMISSIONS OR VIOLATION OF THIS AGREEMENT.</p>
+                <p class="prs-text legal-terms-text">In consideration of the Service Provider agreeing to enter into
+                    Agreement with the Customer, Customer acknowledges, understands and agrees that:</p>
+                <ol class="prs-text legal-terms-list">
+                    <li><strong>Trading Non-Deliverable Bitcoin Settled Products are Very Speculative and
+                            Risky.</strong> Trading Non-Deliverable Bitcoin settled products are highly speculative and
+                        is suitable only for those Customers who (a) understand and are willing to assume the economic,
+                        legal and other risks involved, and (b) are financially able to assume losses significantly in
+                        excess of Margin or deposits.
+                        <p>Trading with Non-deliverable Bitcoin settled products are not an appropriate investment for
+                            retirement funds. Customer represents, warrants and agrees that Customer understands these
+                            risks; that Customer is willing and able, financially and otherwise, to assume the risks of
+                            Trading with Non-Deliverable Bitcoin settled products and that loss of Customers entire
+                            Account Balance will not change Customers life style.</p>
+                    </li>
+                    <li><strong>High Leverage Can Lead To Quick Losses.</strong> The high leverage associated with
+                        trading with Non-Deliverable Bitcoin settled products can result in significant losses due to
+                        price changes. Customers must maintain the minimum margin requirements on their open positions
+                        at all times. It is the Customers responsibility to monitor his/her account balance. The
+                        Service Provider has the right to liquidate any or all open positions whenever the minimum
+                        margin requirement is not maintained. Increasing leverage increases risk.</li>
+                    <li><strong>Prices, Margin And Valuations Are Set By The Service Provider And May Be Different From
+                            Prices Reported Elsewhere.</strong> The Service Provider will provide indicative prices to
+                        be used in trading, valuation of Customer positions and determination of Margin requirements.
+                        Although the Service Provider expects that these prices will be reasonably related to prices
+                        available in the open market, prices reported by the Service Provider may vary from prices
+                        available to banks and other participants in what is known as the open market. The Service
+                        Provider will exercise considerable discretion in setting and collecting Margin.</li>
+                    <li><strong>Market Recommendations Are Informational, Customer Makes Independent Decisions, And The
+                            Service Provider Is Not An Adviser Or A Fiduciary To Customer.</strong> The market
+                        recommendations provided by the Service Provider do not constitute an offer to buy or sell, or
+                        the solicitation of an offer to buy or sell, any contracts. Each decision by Customer to enter
+                        into a buy or sell order or other transaction with the Service Provider and each decision
+                        whether such order or other transaction is appropriate or proper for Customer is an independent
+                        decision by Customer. The Service Provider is not acting as an advisor or serving as a fiduciary
+                        to Customer. Customer agrees that the Service Provider has no fiduciary duty to Customer and no
+                        liability in connection with and is not responsible for any liabilities, claims, damages, costs
+                        and expenses, including attorneys fees, incurred in connection with Customer following the
+                        Service Provider trading recommendations or taking or not taking any action based upon any
+                        recommendation or information provided by the Service Provider.</li>
+                    <li><strong>Recommendations Are Based On Personal Judgments And Are Not Guaranteed.</strong> The
+                        market recommendations of the Service Provider are based solely on the judgment of the Service
+                        Provider personnel. These market recommendations may or may not be consistent with the market
+                        positions or intentions of the Service Provider, its affiliates and employees. The market
+                        recommendations of the Service Provider are based upon information believed to be reliable, but
+                        the Service Provider cannot and does not guarantee the accuracy or completeness thereof or
+                        represent that following such recommendations will reduce or eliminate the risk inherent in
+                        Trading with Non-deliverable Bitcoin settled products.</li>
+                    <li><strong>There is no Central Market or Clearinghouse Guarantee.</strong> Each trade, order or
+                        position is a contract directly between the Service Provider and the Customer. There is no
+                        clearing house and no guarantee by any other party of the Service Provider payment obligations
+                        to the Customer.</li>
+                    <li><strong>No Guarantees of Profit.</strong> There are no guarantees of profit or freedom from loss
+                        in Trading with Non-Deliverable Bitcoin settled products. Customer has received no such
+                        guarantees from the Service Provider or from any of its representatives. Customer is aware of
+                        the risks inherent in Trading with Non-deliverable Bitcoin settled products and is financially
+                        able to bear such risks and withstand any losses incurred.</li>
+                    <li><strong>Customer May Not Be Able To Close or Open Positions.</strong> Due to market conditions,
+                        Website maintenance, technical issues, system failure or other circumstances the Service
+                        Provider may be unable to close existing position or open new position at the level specified by
+                        Customer, and Customer agrees the Service Provider will bear no liability for failure to do so.
+                    </li>
+                    <li><strong>Service Interference and Third Party Attacks.</strong> There may be third party or other
+                        attacks targeting computers/networks, spreading malware, running botnets, (D)DOS attacks,
+                        defacing websites, violations of network security, etc. which can material alter, intercept or
+                        otherwise interfere with the giving or execution of an Order or the transfer of funds to and
+                        from the Customers Account. Customer acknowledges, understands and accepts that the Service
+                        Provider shall bear no responsibility or liability whatsoever for it.</li>
+                    <li style="margin-bottom: 2rem"><strong>Indemnification.</strong> You agree to indemnify and hold
+                        harmless Operator and Services Provider, its affiliates, contractors, licensors, and their
+                        respective directors, officers, employees and agents from and against any claims, actions,
+                        proceedings, investigations, demands, suits, costs, expenses and damages (including attorneys
+                        fees, fines or penalties imposed by any regulatory authority) arising out of or related to (i)
+                        your use of, or conduct in connection with, the Services, (ii) your breach or our enforcement of
+                        these Terms, or (iii) your violation of any applicable law, regulation, or rights of any third
+                        party during your use of the Service. If you are obligated to indemnify Operator and Services
+                        Provider, its affiliates, contractors, licensors, and their respective directors, officers,
+                        employees or agents pursuant to this clause, Operator and Services Provider will have the right,
+                        in its sole discretion, to control any action or proceeding and to determine whether Operator
+                        and Services Provider wishes to settle, and if so, on what terms.</li>
+                </ol>
+            </div>
+        </section>
+    </section>
+    <section id="privacy" style="display: none">
+        <div class="legal-terms-section prs-container">
+            <h2 class="prs-title legal-terms-title">Legal Trade Trading Services Ltd. Privacy Policy</h2>
+        </div>
+        <div class="prs-container">
+            <ol class="legal-terms-sections-list">
+                <li>Introduction
+                    <p>The proper handling of personal data is extremely important to us. We therefore take your privacy
+                        seriously when processing and protecting your personal data. This is done in accordance with
+                        provisions set out in the applicable privacy laws (including the General Data Protection
+                        Regulation). We want you (hereinafter: «user») to understand how and why Legal Trade Trading
+                        Services Ltd. (hereinafter referred to as «Legal Trade» «we» «our» or «us» or «Company») a
+                        company incorporated in the Republic of Seychelles with a company number of 206865 collects,
+                        processes, uses, and shares your personal information (hereinafter: «Personal Information»,
+                        «PI», «PD») when you use our website <a href="../../index.html">Legal Trademining.com</a>,
+                        software, applications and other online products and services (collectively, the «Services») or
+                        when you otherwise interact with us or receive a communication from us. By visiting <a
+                            href="../../index.html">Legal Trademining.com</a> you are accepting and consenting to
+                        the practices described in this policy.</p>
+                    <p>We may revise this Privacy Policy from time to time. The current version of the policy will
+                        govern our processing of your personal data and will always be available at <a
+                            href="../../index.html">Legal Trademining.com</a>. If we make a change to this policy
+                        that, in our sole discretion, is material, we will notify you via an email to the email address
+                        associated with your account. If required by law, we will request your permission or give you
+                        the opportunity to opt out of any new uses of your Personal Information.</p>
+                    <p>We take great care to limit the Personal Information we collect and use only for the purposes,
+                        which are necessary for providing our Services.</p>
+                    <p>Legal Trade Trading Services Ltd collects and processes personal information that is
+                        necessary for legitimate business purposes, which will be disclosed to any person whose personal
+                        data is being collected, held or processed (hereinafter: «data subject») at the time of
+                        collection. Legal Trade Trading Services Ltd will use and process this information only for
+                        the purposes for which it was collected, retaining the personal information only for so long as
+                        it is required for specific purpose of collecting the information.</p>
+                    <p>Legal Trade Trading Services Ltd will not collect sensitive personal data except when
+                        permitted or required to do so by law, and will do so only for legitimate business purposes. If
+                        in any other instance a need arises to collect sensitive personal data, Legal Trade Trading
+                        Services Ltd will do so only with the data subjects express consent, which can be withdrawn at
+                        any time.</p>
+                    <p>We retain your Personal Data for as long as it is required to satisfy the purpose for which they
+                        were collected and used, unless a longer period is necessary for our legal obligations or to
+                        defend a legal.</p>
+                    <p>We do not transfer your Personal Data to Third Parties, except circumstances mentioned in this
+                        Privacy Policy.</p>
+                    <p>This Privacy Policy is incorporated into and is subject to the Legal Trade Trading Services
+                        Ltd Terms&Conditions. Your use of the Services and any personal information you provide on our
+                        Services remains subject to the terms of this Privacy Policy and our Terms&Conditions.</p>
+                    <p>Personal data, or personal information, means any information about an individual from which that
+                        person can be identified. It does not include data where the identity has been removed
+                        (anonymous data).</p>
+                </li>
+                <li>Purposes of Personal Information collection
+                    <p>We may deliver, personalize, and improve our Services by combining and using the information we
+                        have about you (including information we receive on and off our Services) to understand how you
+                        use and interact with our Services and the people or things youre connected to and interested
+                        in. We also may use the information we have about you for the following purposes:</p>
+                    <ol>
+                        <li>Provide, maintain, improve, and develop relevant features, content, and Services;</li>
+                        <li>Fulfil your requests and when authorized by you;</li>
+                        <li>Research and develop new services;</li>
+                        <li>Detect and defend against fraudulent, abusive, or unlawful activity;</li>
+                        <li>We use your location to personalize the content you provide and to serve targeted ads;</li>
+                        <li>Research and develop new services;</li>
+                        <li>Send you technical notices, updates, security alerts, invoices and other support and
+                            administrative messages;</li>
+                        <li>Provide customer service;</li>
+                        <li>Communicate with you about products, services, offers, promotions, and events, and provide
+                            other news and information we think will be of interest to you;</li>
+                        <li>Telephone number and address of the wallet can be used for implementation of transactions;
+                        </li>
+                        <li>The e-mail address can be used to carry out mailings with your consent;</li>
+                        <li>Personalize the Services and provide advertisements, content and features that match user
+                            profiles or interests.</li>
+                    </ol>
+                    <p>We collect general anonymous analytical information on the use of the services for their
+                        optimization.</p>
+                    <p>We provide you with controls to manage your experience with us. You can change the privacy
+                        settings in your account at any time.</p>
+                </li>
+                <li>Personal Information
+                    <ol>
+                        <li class="list-subtitle">We may collect, use, store and transfer different kinds of personal
+                            data about you which we have grouped together as follows:
+                            <p><strong>Information you give us.</strong> We receive and store any information you enter
+                                on our website or give us in any other way. You provide most such information when you
+                                search some information on our website, subscribe to our newsletters, fill out a form
+                                for any media, events or partnership inquiries, communicate with our support service.
+                                For example, you provide information when you communicate with us by post, e-mail, or
+                                otherwise. As a result of those actions, you might supply us with such information as
+                                your name, address, e-mail, phone numbers, etc.</p>
+                            <p><strong>Automatic information.</strong> We receive and store certain types of information
+                                whenever you interact with us. For example, like many websites, we use «cookies», and we
+                                obtain certain types of information when your web browser accesses our website.</p>
+                            <p><strong>Information from other sources.</strong> We might receive information about you
+                                from other sources and add it to our account information.</p>
+                            <p>We also collect, use and share aggregated data such as statistical or demographic data
+                                for any purpose. However, aggregated data is not considered personal data as this data
+                                does not directly or indirectly reveal your identity. For example, we may aggregate your
+                                usage data to calculate the percentage of users accessing a specific website feature.
+                            </p>
+                            <p>We do not collect any special categories of personal data about you (this includes
+                                details about your race or ethnicity, religious or philosophical beliefs, sex life,
+                                sexual orientation, political opinions, trade union membership, information about your
+                                health and genetic and biometric data). Nor do we collect any information about criminal
+                                convictions and offences.</p>
+                        </li>
+                        <li class="list-subtitle">Personal Information we collect and use
+                            <p><strong>User information.</strong> The information that we collect includes unique
+                                identifiers, browser type and settings, device type and settings, operating system,
+                                mobile network information including operator name and phone number and application
+                                version number. We also collect information about the interaction of your browsers and
+                                devices with our services, including OS, IP address, specifications and the date, time
+                                and referrer URL of your request.</p>
+                            <p><strong>Account information.</strong> To create an account, you must provide a username,
+                                e-mail and password. You can also choose to add a payment or other information to your
+                                account.</p>
+                            <p><strong>Actions you take.</strong> We collect information about the actions you take when
+                                using the Services. This includes your interactions with content, public, posting
+                                comments, interests in the projects. It also includes your interactions with other users
+                                or projects.</p>
+                            <p><strong>Other information.</strong> You may choose to provide other information directly
+                                to us. For example, we may collect information when you request customer support or
+                                otherwise communicate with us. You may provide us with the information about your e-mail
+                                to receive mailings and to confirm transactions.</p>
+                        </li>
+                        <li class="list-subtitle">When you access or use our Services, we may also automatically collect
+                            information about you
+                            <p><strong>This includes:</strong></p>
+                            <p><strong>Technical data.</strong> We may log information when you access and use the
+                                Services. This may include your IP address, browser type, operating system, device
+                                information (e.g., device IDs), hardware settings.</p>
+                            <p><strong>Logs of our services,</strong> including messages about their work problems, may
+                                contain the driver versions, software installation paths, and the computer's operating
+                                time.</p>
+                            <p><strong>Information collected from cookies.</strong> When you use our website, we may
+                                send one or more cookies to collect data analytics. When you use third-party affiliate,
+                                links registered in our services, cookies will be stored on your device within 14 days
+                                from the moment of using such link, for the purposes of successful registration.</p>
+                            <p><strong>Location information.</strong> We may receive and process information about your
+                                location.</p>
+                            <p>We may receive personal data about you from various third parties and public sources as
+                                set out below. Technical Data from the following parties:</p>
+                            <ol>
+                                <li>analytics providers such as Google based outside the EU;</li>
+                                <li>advertising networks; and</li>
+                                <li>search information providers.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+                <li>Cookies
+                    <p>Our website uses cookies to distinguish you from other users of our website. This helps us to
+                        provide you with a good experience when you browse our website and also allows us to improve our
+                        site.</p>
+                    <p>Cookies are typically stored on your computer's hard drive. Information collected from cookies is
+                        used by us to evaluate the effectiveness of our Site, analyze trends, and administer the
+                        Platform. The information collected from cookies allows us to determine such things as which
+                        parts of our Site are most visited and difficulties our visitors may experience in accessing our
+                        Site. With this knowledge, we can improve the quality of your experience on the Platform by
+                        resolving access difficulties and recognizing and delivering more of the most desired features
+                        and information.</p>
+                    <p>We also use cookies and/or a technology known as web bugs or clear gifs, which are typically
+                        stored in emails to help us confirm your receipt of, and response to, our emails and to provide
+                        you with a more personalized experience when using our Site.</p>
+                    <p>We use third party service provider(s), to assist us in better understanding the use of our Site.
+                        Our service provider(s) will place cookies on the hard drive of your computer and will receive
+                        information we select, that will educate us on such things as how visitors navigate around our
+                        site, what products are browsed, and general Transaction information. Our service provider(s)
+                        analyses this information and provides us with aggregate reports. The information and analysis
+                        provided by our service provider(s) will be used to assist us in better understanding our
+                        visitors' interests in our Site and how to better serve those interests.</p>
+                    <p>The information collected by our service provider(s) may be linked to and combined with
+                        information that we collect about you while you are using the Platform. Our service provider(s)
+                        is/are contractually restricted from using information they receive from our Site other than to
+                        assist us.</p>
+                    <p>By using our Site you are agreeing that we may use cookies for the purposes set out above</p>
+                    <p>You can find out more about Legal Trade Trading Services Ltds use of Cookies in our Cookie
+                        Policy</p>
+                </li>
+                <li>Uses made of the information
+                    <ol>
+                        <li class="list-subtitle">We use information held about you in the following ways:
+                            <p><strong>Information you give to us. </strong> We will use this information:</p>
+                            <ol>
+                                <li>to carry out our obligations arising from any contracts entered into between you and
+                                    us and to provide you with the information, products and services that you request
+                                    from us;</li>
+                                <li>to provide you with information about other goods and services we offer that are
+                                    similar to those that you have already purchased or enquired about;</li>
+                                <li>to provide you, or permit selected third parties to provide you, with information
+                                    about goods or services we feel may interest you. If you are an existing customer,
+                                    we will only contact you by electronic means (e-mail or SMS) with information about
+                                    goods and services similar to those which were the subject of a previous sale or
+                                    negotiations of a sale to you. If you are a new customer, and where we permit
+                                    selected third parties to use your data, we (or they) will contact you by electronic
+                                    means only if you have consented to this. If you do not want us to use your data in
+                                    this way, or to pass your details on to third parties for marketing purposes, please
+                                    tick the relevant box situated on the form on which we collect your data;</li>
+                                <li>to notify you about changes to our service; or</li>
+                                <li>to ensure that content from our site is presented in the most effective manner for
+                                    you and for your computer.</li>
+                            </ol>
+                            <p><strong>Information we collect about you. </strong> We will use this information:</p>
+                            <ol>
+                                <li>to administer our site and for internal operations, including troubleshooting, data
+                                    analysis, testing, research, statistical and survey purposes;</li>
+                                <li>to improve our site to ensure that content is presented in the most effective manner
+                                    for you and for your computer;</li>
+                                <li>to allow you to participate in interactive features of our service, when you choose
+                                    to do so;</li>
+                                <li>as part of our efforts to keep our site safe and secure; or</li>
+                                <li>to measure or understand the effectiveness of advertising we serve to you and
+                                    others, and to deliver relevant advertising to you; or</li>
+                                <li>to make suggestions and recommendations to you and other users of our site about
+                                    goods or services that may interest you or them.</li>
+                            </ol>
+                            <p><strong>Information we receive from other sources. </strong> We will combine this
+                                information with information you give to us and information we collect about you. We
+                                will use this information and the combined information for the purposes set out above
+                                (depending on the types of information we receive).</p>
+                            <p>We will use and process your Personal Information only for the purpose(s) for which it
+                                has been provided to us.</p>
+                        </li>
+                        <li class="list-subtitle">Disclosure of your information
+                            <p>You agree that we have the right to share your personal information with:</p>
+                            <p>We do not transfer your Personal Data to third Parties, except cases, that are mentioned
+                                in this Privacy Policy.</p>
+                            <p><strong>With our partners.</strong> We may share information with vendors, consultants,
+                                and other service providers (but not with advertisers and ad partners) who need access
+                                to such information to carry out work for us. The partners use of personal data will be
+                                subject to appropriate confidentiality and security measures.</p>
+                            <p><strong>For example:</strong> to make payments, confirm phone numbers and improve the
+                                functioning of the services.</p>
+                            <p><strong>To comply with the law.</strong> We may share information in response to a
+                                request for information if we believe disclosure is in accordance with, or required by,
+                                any applicable law, regulation, legal process or governmental request, including, but
+                                not limited to, meeting national security or law enforcement requirements. To the extent
+                                the law allows it, we will attempt to provide you with prior notice before disclosing
+                                your information in response to such a request.</p>
+                            <p><strong>In an emergency.</strong> We may share information if we believe it's necessary
+                                to prevent imminent and serious bodily harm to a person.</p>
+                            <p><strong>To enforce our policies and rights.</strong> We may share information if we
+                                believe your actions are inconsistent with our user agreements, rules, or other
+                                Legal Trade Trading Services Ltd policies, or to protect the rights, property, and
+                                safety of ourselves and others.</p>
+                            <p><strong>With our affiliates.</strong> We may share information between and among
+                                Legal Trade Trading Services Ltd and any of our parents, affiliates, subsidiaries,
+                                and other companies under common control and ownership.</p>
+                            <p><strong>With your consent.</strong> We may share information about you with your consent
+                                or at your direction.</p>
+                            <p>We engage service providers to perform functions and provide services to us. For example,
+                                we use a variety of third-party services to help operate our services and to help us
+                                understand the use of our services, such as Google Analytics. We may share your private
+                                personal data with such service providers subject to obligations consistent with this
+                                Privacy Policy and any other appropriate confidentiality and security measures, and on
+                                the condition that the third parties use your private personal data only on our behalf
+                                and pursuant to our instructions. We share your payment information with payment
+                                services providers to process payments; prevent, detect, and investigate fraud or other
+                                prohibited activities; facilitate dispute resolution such as chargebacks or refunds; and
+                                for other purposes associated with the acceptance of credit and debit cards.</p>
+                            <p>We may partner with third-party advertisers, ad networks to deliver advertising and
+                                content targeted to your interests and to better understand your use of the Services.
+                                These third parties may collect information sent by your computer, browser, or mobile
+                                device in response to a request for content, such as unique identifiers, your IP
+                                address, location or other information about your computer or device.</p>
+                            <p>If you submit personally identifiable information to us through the Legal Trade
+                                Trading Services Ltd Services, then we may use your personal information to operate,
+                                maintain, and provide features and functionality of our website, app and another
+                                services.</p>
+                            <p>Other information, that does not personally identify you as an individual is collected by
+                                Legal Trade Trading Services Ltd (such as, by way of example, patterns of use) and
+                                is exclusively owned by Legal Trade Trading Services Ltd. Legal Trade Trading
+                                Services Ltd can use this information in such manner that Legal Trade Trading
+                                Services Ltd, in its sole discretion, deems appropriate.</p>
+                            <p>We may share specific aggregated, non-personal information with third parties, such as
+                                the number of users who have registered with us, the volume and pattern of traffic to
+                                and within the website, etc. That information will not identify you, the individual, in
+                                any way.</p>
+                            <p>We shall not use your email or other contact information for sending of commercial
+                                proposal, other marketing needs, without your prior consent.</p>
+                            <p>As were mentioned above, when you send us messages, we can keep them for administering of
+                                your inquiries, for improving of our services. We shall not transfer information from
+                                such messages to third parties.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li>Where we store your personal data
+                    <p>The data that we collect from you will be transferred to, and stored at, a destination outside
+                        the European Economic Area ("EEA"). It will also be processed by staff operating outside the EEA
+                        who work for us or for one of our suppliers. Legal Trade Trading Services Ltd will ensure
+                        that the relevant third party agrees to apply the same levels of protection that Legal Trade
+                        Trading Services Ltd is legally obliged to have in place when it processes personal data. This
+                        includes staff engaged in, among other things, the fulfilment of your order, the processing of
+                        your payment details and the provision of support services. By submitting your personal data,
+                        you agree to this transfer, storing or processing. We will take all steps reasonably necessary
+                        to ensure that your data is treated securely and in accordance with this Privacy Policy.</p>
+                    <p>All personal information you provide to us is stored on our secure servers. Any payment
+                        transactions will be encrypted. Where we have given you (or where you have chosen) a password
+                        which enables you to access certain parts of our site, you are responsible for keeping this
+                        password confidential. We ask you not to share a password with anyone.</p>
+                    <p>Unfortunately, the transmission of information via the internet is not completely secure.
+                        Although we will do our best to protect your personal data, we cannot guarantee the security of
+                        your data transmitted to our site; any transmission is at your own risk. Once we have received
+                        your information, we will use strict procedures and security features to try to prevent
+                        unauthorised access.</p>
+                </li>
+                <li>Your rights regarding collected PI
+                    <p>You can access and change certain information through the Services.</p>
+                    <p>You may delete your account information at any time from the preferences page. But we may retain
+                        certain information about you as required by law or for legitimate business purposes after you
+                        delete your account.</p>
+                    <p>If you initially consent to our collection of location information, you can subsequently stop the
+                        collection of this information at any time by changing the preferences on your browser.</p>
+                    <p>You have the right to receive information regarding purposes of Personal information collection,
+                        regarding third parties, to which we disclose your personal information, information, regarding
+                        safeguards that are applicable for secure storage of your Personal information, period of time
+                        for which Personal information will be stored.</p>
+                    <p>You also have the right to demand erasure of personal data concerning you sending us a request.
+                        Legal Trade Trading Services Ltd shall fulfil your request in appropriate period of time. If
+                        there is no other lawful ground for storing and processing of your PI, as prescribed by
+                        applicable law, Legal Trade Trading Services Ltd shall erase such information. If there is
+                        another legal ground for such processing, Legal Trade Trading Services Ltd shall notify you
+                        in appropriate period of time.</p>
+                    <p>You also have the right to demand restriction of the storing and processing of the PI, if legal
+                        grounds for such demands have arisen / as prescribed in applicable law.</p>
+                    <p>You have the right to object processing of personal data concerning yourself under circumstances,
+                        that are prescribed in applicable law. In case of such objection, Legal Trade Trading
+                        Services Ltd shall restrain from processing of your PI, if there will be no other legal grounds
+                        for continuing of processing.</p>
+                    <p>Legal Trade Trading Services Ltd takes your rights very seriously. However, if you are of the
+                        opinion that we have not dealt with your complaints adequately, you have the right to submit a
+                        complaint to the data privacy protection authorities responsible.</p>
+                    <p>You have the right to ask Legal Trade Trading Services Ltd to provide you with a structured,
+                        list of previously provided PI. You also can ask Legal Trade Trading Services Ltd to
+                        transmit your PI to previously chosen third party.</p>
+                    <p>To send a request for delete, rectification and submission of PD please use the feedback form.
+                    </p>
+                </li>
+                <li>Protection of the Personal Information
+                    <p>We provide the following safety measures regarding protection of Your PI:</p>
+                    <ol>
+                        <li>evaluation of the effectiveness of used security measures, prior to the launch of the
+                            website and its updates;</li>
+                        <li>establishing rules to access to personal data processed by the website, as well as ensuring
+                            registration and recording of all actions performed with PI in the information systems of
+                            the website;</li>
+                        <li>detection of the facts of unauthorized access to PI and the adoption of appropriate response
+                            measures;</li>
+                        <li>restoration of PI that was modified or destroyed due to unauthorized access to them (within
+                            the framework of technical capability of the Project).</li>
+                    </ol>
+                    <p>We use, store and process your PI on Legal Trade Trading Services Ltd servers in various
+                        jurisdictions, where our facilities and/or service providers are located. By filling a «consent
+                        application» You agree to this transfer, storing, or processing. Legal Trade Trading
+                        Services Ltd will take all steps reasonably necessary to ensure that your Personal Data is
+                        treated securely and in accordance with this Policy. Legal Trade Trading Services Ltd
+                        protect your Personal Data under internationally acknowledged standards, using physical,
+                        technical, and administrative security measures to reduce the risks of loss, misuse,
+                        unauthorized access, disclosure, and alteration. Some of the safeguards Legal Trade Trading
+                        Services Ltd use are firewalls and data encryption, physical access controls to our data
+                        centers, and information access authorization controls. Legal Trade Trading Services Ltd
+                        also authorize access to Personal Data only for those employees or contractors who require it to
+                        fulfil their job or service responsibilities. All of our physical, electronic, and procedural
+                        safeguards are designed to comply with applicable laws and regulations. Third parties may be
+                        located in other countries where the laws on processing of Personal Data may be less stringent
+                        than in your country. From time to time, the Personal Data may be also stored in other
+                        locations, and in such cases, Legal Trade Trading Services Ltd will ensure that the Personal
+                        Data will be stored and processed with the reasonable level of care and security.</p>
+                </li>
+                <li>Notification
+                    <p>If Legal Trade Trading Services Ltd becomes aware of security systems breach, then we may
+                        attempt to notify you electronically so that you can take appropriate protective steps.
+                        Legal Trade Trading Services Ltd may post a notice on our website if the security breach
+                        occurs.</p>
+                    <p>When the personal data breach is likely to result in a high risk to the rights and freedoms of
+                        users, Legal Trade Trading Services Ltd will inform you.</p>
+                    <p>In the event that Legal Trade Trading Services Ltd is acquired by or merged with a third
+                        party entity, we reserve the right, in any of these circumstances, to transfer or assign the
+                        information we have collected from our Users as part of such merger, acquisition, sale, or other
+                        change of control. If we become involved in a merger, acquisition, or any form of sale of some
+                        or all of its assets, we will notify Users before personal information is transferred and
+                        becomes subject to a different privacy policy. In the unlikely event of our bankruptcy,
+                        insolvency, reorganization, receivership, or assignment for the benefit of creditors, or the
+                        application of laws or equitable principles affecting creditors' rights generally, we may not be
+                        able to control how Your personal information is treated, transferred, or used.</p>
+                </li>
+                <li>Changes to our privacy policy
+                    <p>We may revise this Privacy Policy from time to time. The most current version of the policy will
+                        govern our processing of your personal data and will always be at <a
+                            href="../../index-2.html">Legal Trademining.com</a>. If we make a change to this policy
+                        that, in our sole discretion, is material, we will notify you via an email to the email address
+                        associated with your account. If required by law, we will get your permission or give you the
+                        opportunity to opt out of any new uses of your Personal Information.</p>
+                </li>
+                <li>Contact us
+                    <p>For the purpose of the Data Protection Act 2004, the data controller is Legal Trade Trading
+                        Services Ltd of Suite 1, Second floor, Sound & Vision house, Francis Rachel Str., Victoria,
+                        Mahe, Seychelles</p>
+                    <p>If You have any questions about this Privacy Policy, please feel free to contact us or to write
+                        to us at e-mail:
+                        <a href="mailto:support@Legal Trademining.com"><span class="__cf_email__"
+                                data-cfemail="1a696f6a6a75686e5a6a6873777f62786e34797577">[Support]</span></a>
+                    </p>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section id="risk" style="display: none">
+        <div class="legal-terms-section prs-container">
+            <h2 class="prs-title legal-terms-title">RISK DISCLOSURE STATEMENT</h2>
+            <p class="prs-text legal-terms-text">TRADING AND FINANCING TRADES IN CRYPTOCURRENCY ENTAILS CERTAIN RISKS.
+                THIS RISK DISCLOSURE STATEMENT CANNOT AND DOES NOT DISCLOSE ALL RISKS AND OTHER ASPECTS INVOLVED IN
+                HOLDING, TRADING, OR ENGAGING IN FINANCING OR FINANCED TRANSACTIONS IN CRYPTOCURRENCY. BEFORE TAKING A
+                LEVERAGED POSITION, YOU SHOULD ENSURE THAT YOU UNDERSTAND THE RISKS INVOLVED AND CONSIDER YOUR LEVEL OF
+                EXPERIENCE AND ALL THE POTENTIAL RISKS. YOU SHOULD CAREFULLY CONSIDER PRIME XBT TRADING SERVICES LTD.
+                TERMS AND CONDITIONS AND, TO THE EXTENT NECESSARY, CONSULT AN APPROPRIATE LAWYER, ACCOUNTANT, OR TAX
+                PROFESSIONAL. RISKS INCLUDE, BUT ARE NOT LIMITED TO, THE FOLLOWING</p>
+        </div>
+        <div class="prs-container">
+            <ol class="legal-terms-sections-list">
+                <li>Market Risk:
+                    <p>The market for cryptocurrency is still new and uncertain. No-one should have funds invested in
+                        cryptocurrency or speculate in cryptocurrency that she is not prepared to lose entirely. Whether
+                        the market for one or more cryptocurrency will move up or down, or whether a particular
+                        cryptocurrency will lose all or substantially all of its value, is unknown. This applies both to
+                        traders that are going long and to traders that are shorting the market. Participants should be
+                        cautious about holding cryptocurrency.</p>
+                </li>
+                <li>Liquidity and Listing Risk:
+                    <p>Markets for cryptocurrency have varying degrees of liquidity. Some are quite liquid while others
+                        may be thinner. Thin markets can amplify volatility. There is never a guarantee that there will
+                        be an active market for one to sell, buy, or trade cryptocurrency or products derived from or
+                        ancillary to them. Furthermore, any market for cryptocurrency may abruptly appear and vanish.
+                        Legal Trade Trading Services Ltd. makes no representations or warranties about whether a
+                        cryptocurrency that may be traded on the
+                        <a href="../../index-2.html">Legal Trademining.com</a> any point in the future, if at all.
+                        Any cryptocurrency is subject to delisting without notice or consent.
+                    </p>
+                </li>
+                <li>Legal Risk:
+                    <p>The legal status of certain cryptocurrency may be uncertain. This can mean that the legality of
+                        holding or trading them is not always clear. Whether and how one or more cryptocurrency
+                        constitute property, or assets, or rights of any kind may also seem unclear. Participants are
+                        responsible for knowing and understanding how cryptocurrency will be addressed, regulated, and
+                        taxed under applicable law. There is a risk that in some jurisdictions cryptocurrency might be
+                        considered to be a security, or that it might be considered to be a security in the future.
+                        Legal Trade Trading Services Ltd. does not give warranties or guarantees that any
+                        cryptocurrency are not a security in all jurisdictions. Your is bound to check if acquisition
+                        and disposal of cryptocurrency is legal in his jurisdiction, You undertakes not to use
+                        cryptocurrency should their use not be legal in the relevant jurisdiction. If You establish that
+                        the use of cryptocurrency is not legal in Your jurisdiction, You should not use
+                        cryptocurrencies, not acquire them and should immediately stop using or possessing them if such
+                        case arises.</p>
+                </li>
+                <li>Exchange Risk:
+                    <p>Having cryptocurrency on deposit or with any third party in a custodial relationship has
+                        attendant risks. These risks include security breaches, risk of contractual breach, and risk of
+                        loss. Participants should be wary of allowing third parties to hold their property for any
+                        reason.</p>
+                    <p>You acknowledge that Legal Trade Trading Services Ltd. is not responsible for any losses or
+                        damages of any kind arising either directly or indirectly from a withdrawal of funds from your
+                        account by a third party due to the loss of credentials</p>
+                    <p>You acknowledge that Legal Trade Trading Services Ltd. is not responsible for any losses or
+                        damages of any kind arising either directly or indirectly from the sending of cryptocurrency to
+                        the wrong wallet address during the withdrawal of funds from their Legal Trade Trading
+                        Services Ltd. account</p>
+                    <p>You acknowledge that any cryptocurrency may be lost if sent to the wrong address (for example but
+                        without limitation, if the address is improperly formatted, contains errors, or is intended to
+                        be used for a different type of cryptocurrency). You accept that Legal Trade Trading
+                        Services Ltd. is not responsible for any losses or damages whatsoever arising directly or
+                        indirectly due to any such error.</p>
+                </li>
+                <li>Trading Risk:
+                    <p>In addition to liquidity risks, values in any digital token marketplace are volatile and can
+                        shift quickly. Participants in any cryptocurrency market are warned that they should pay close
+                        attention to their position and holdings, and how they may be impacted by sudden and adverse
+                        shifts in trading and other market activities.</p>
+                </li>
+                <li>Risks Associated with Financing Activities:
+                    <p>When you finance a purchase or sale of cryptocurrency on a peer-to-peer basis, you run the risk
+                        of losing your provided financing. Similarly, when you accept financing to enter a trading
+                        agreement, you accept the risk of not being able to repay that financing (e.g., if the market
+                        price of the cryptocurrency you purchased with the financing falls). Participants should know
+                        all of the terms of any contracts they enter and how their trading strategies and other market
+                        and risk factors can affect their financing obligations.</p>
+                    <p>You acknowledge that any cryptocurrency may be cancelled, lost or double spent, or otherwise lose
+                        all or most of their value, due to forks, rollbacks, Attacks, changes to cryptocurrency
+                        Properties or failure of the cryptocurrency to operate as intended. You accept that
+                        Legal Trade Trading Services Ltd. is not responsible for any losses or damages whatsoever
+                        arising directly or indirectly due to the occurrence of any such event.</p>
+                    <p>You accept and acknowledge that Legal Trade Trading Services Ltd. shall have, and maintains,
+                        the right to refuse orders to establish new or larger positions or to buy or sell Instruments.
+                    </p>
+                    <p>You accept and acknowledge that Legal Trade Trading Services Ltd. shall have the right to
+                        reduce the size of your open positions. Legal Trade Trading Services Ltd. will inform you as
+                        soon as practicable regarding such reduction and the reason hereof.</p>
+                </li>
+                <li>Risk of theft and hacking:
+                    <p>Hackers or other groups or organizations may attempt to interfere with the Website or the
+                        availability of cryptocurrency in any number of ways, including without limitation denial of
+                        service attacks, Sybil attacks, spoofing, smurfing, malware attacks, or consensus-based attacks.
+                        You hereby agree that Legal Trade Trading Services Ltd. shall have no liability for any such
+                        loss Your incur.</p>
+                </li>
+                <li>Risk of security weaknesses in the Website and/or cryptocurrency source code or any associated
+                    software and/or infrastructure:
+                    <p>There is a risk that the Website and cryptocurrency may unintentionally include weaknesses or
+                        bugs in the source code interfering with the use of or causing the loss of cryptocurrency.</p>
+                </li>
+                <li>Risk of weaknesses or exploitable breakthroughs in the field of cryptography:
+                    <p>Advances in cryptography, or technical advances such as the development of quantum computers,
+                        could present risks to cryptocurrencies which could result in the theft or loss of
+                        cryptocurrency.</p>
+                </li>
+                <li>Internet transmission risks:
+                    <p>You acknowledge that there are risks associated with using the cryptocurrency including, but not
+                        limited to, the failure of hardware, software, and Internet connections. You acknowledge that
+                        Legal Trade Trading Services Ltd. shall not be responsible for any communication failures,
+                        disruptions, errors, distortions or delays You may experience when using the Website and
+                        cryptocurrency, howsoever caused.</p>
+                    <p>You acknowledge that you may be prevented from sending a transaction request, or a transaction
+                        request or email may not be received by Legal Trade Trading Services Ltd. or the Services,
+                        due to hardware, software or services issues (including, without limitation, Internet and other
+                        network connectivity issues). You accept that Legal Trade Trading Services Ltd. is not
+                        responsible for any loss or damage whatsoever arising directly or indirectly due to any such
+                        issues.</p>
+                </li>
+                <li>Banking risks:
+                    <p>You acknowledge that Legal Trade Trading Services Ltd. cannot be held liable for the number
+                        of days passing between the transfer of fiat funds from your account on Legal Trade Trading
+                        Services Ltd. until the time that the transferred funds are booked on the account with the
+                        receiving bank.</p>
+                    <p>You acknowledge that subject to a transfer instruction being complete and correct, incoming
+                        transfers of fiat funds will only be booked on your account and be at your disposal once
+                        Legal Trade Trading Services Ltd. has received the funds</p>
+                    <p>You acknowledge that Legal Trade Trading Services Ltd. cannot be held liable for the number
+                        of days passing between the transfer of fiat funds by the sending bank until the time that the
+                        transferred funds are received by Legal Trade Trading Services Ltd. and booked on your
+                        account.</p>
+                </li>
+                <li>Taxation:
+                    <p>You bear the sole responsibility to determine if the purchase of cryptocurrency or the potential
+                        appreciation or depreciation in the value of cryptocurrency over time has tax implications for
+                        You in Your home jurisdiction. By purchasing cryptocurrency and to the extent permitted by law,
+                        You agree not to hold any of Legal Trade Trading Services Ltd., its affiliates,
+                        shareholders, directors or advisors liable for any tax liability associated with or arising from
+                        the purchase of cryptocurrency.</p>
+                    <p>You are solely responsible for withholding, collecting, reporting, paying, and/or remitting any
+                        and all taxes to the appropriate tax authorities in such jurisdiction(s) in which You may be
+                        liable to pay tax. Legal Trade Trading Services Ltd. shall not be responsible for
+                        withholding, collecting, reporting, paying, and/or remitting any taxes (including, but not
+                        limited to, any income, capital gains, sales, value added or similar tax) which may arise from
+                        Yours acquisition of cryptocurrency.</p>
+                </li>
+                <li>Risk associated with the activity of the Market Maker:
+                    <p>You acknowledge that Legal Trade Trading Services Ltd. may act as a Market Maker in certain
+                        assets.</p>
+                    <p>You acknowledge that Legal Trade Trading Services Ltd., when acting as a Market Maker, may
+                        quote you bid and ask prices. Notwithstanding this, you accept that Company name has no
+                        obligation to quote prices to you at any time in any given market, nor an obligation to quote
+                        prices with a specific maximum spread to you.</p>
+                    <p>You accept that Legal Trade Trading Services Ltd., as Market Maker, may hold positions that
+                        are opposite to your positions, resulting in potential conflicts of interest between
+                        Legal Trade Trading Services Ltd. and You.</p>
+                </li>
+                <li>Leverage risks:
+                    <p>Please trade with caution when you use leverage in trading or investing. If You do not use
+                        leverage properly it can have extreme effects on Your accounts. You can lose a huge amount of
+                        money if a trade works against You. Trading and dealing with cryptocurrency high leverage is a
+                        high level risk.</p>
+                    <p>It can be very risky for the beginners to use high leverage because You generally do not have
+                        enough experience in trading high leverage. You should not trade with it until You get a clear
+                        idea how it works.</p>
+                </li>
+                <li>Unanticipated risks:
+                    <p>Cryptocurrencies and blockchains are new and untested technology. In addition to the risks set
+                        forth here, there are risks that Legal Trade Trading Services Ltd. cannot foresee and it is
+                        unreasonable to believe that such risks could have been foreseeable. Risks may further
+                        materialize as unanticipated.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <section id="cookie" style="display: none">
+        <div class="legal-terms-section prs-container">
+            <h2 class="prs-title legal-terms-title">Cookie Policy for Legal Trade</h2>
+            <p class="prs-text legal-terms-text">This is the Cookie Policy for Legal Trade, accessible from
+
+                <a href="../../index-2.html">Legal Trademining.com</a>
+            </p>
+        </div>
+        <div class="prs-container">
+            <ol class="legal-terms-sections-list">
+                <li>What Are Cookies
+                    <p>As is common practice with almost all professional websites this site uses cookies, which are
+                        tiny files that are downloaded to your computer, to improve your experience. This page describes
+                        what information they gather, how we use it and why we sometimes need to store these cookies. We
+                        will also share how you can prevent these cookies from being stored however this may downgrade
+                        or 'break' certain elements of the sites functionality.</p>
+                    <p>For more general information on cookies see the Wikipedia article on HTTP Cookies.</p>
+                </li>
+                <li>How We Use Cookies
+                    <p>We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no
+                        industry standard options for disabling cookies without completely disabling the functionality
+                        and features they add to this site. It is recommended that you leave on all cookies if you are
+                        not sure whether you need them or not in case they are used to provide a service that you use.
+                    </p>
+                </li>
+                <li>Disabling Cookies
+                    <p>You can prevent the setting of cookies by adjusting the settings on your browser (see your
+                        browser Help for how to do this). Be aware that disabling cookies will affect the functionality
+                        of this and many other websites that you visit. Disabling cookies will usually result in also
+                        disabling certain functionality and features of the this site. Therefore it is recommended that
+                        you do not disable cookies.</p>
+                    <p>You can learn how to manage cookies on your web browser by following the <a
+                            href="https://privacypolicies.com/blog/browser-cookies-guide/"> Browser Cookies Guide</a>.
+                    </p>
+                </li>
+                <li>The Cookies We Set
+                    <ol>
+                        <li>Account related cookies
+                            <p>If you create an account with us then we will use cookies for the management of the
+                                signup process and general administration. These cookies will usually be deleted when
+                                you log out however in some cases they may remain afterwards to remember your site
+                                preferences when logged out.</p>
+                        </li>
+                        <li>Login related cookies
+                            <p>We use cookies when you are logged in so that we can remember this fact. This prevents
+                                you from having to log in every single time you visit a new page. These cookies are
+                                typically removed or cleared when you log out to ensure that you can only access
+                                restricted features and areas when logged in.</p>
+                        </li>
+                        <li>Email newsletters related cookies
+                            <p>This site offers newsletter or email subscription services and cookies may be used to
+                                remember if you are already registered and whether to show certain notifications which
+                                might only be valid to subscribed/unsubscribed users.</p>
+                        </li>
+                        <li>Forms related cookies
+                            <p>When you submit data to through a form such as those found on contact pages or comment
+                                forms cookies may be set to remember your user details for future correspondence.</p>
+                        </li>
+                        <li>Site preferences cookies
+                            <p>In order to provide you with a great experience on this site we provide the functionality
+                                to set your preferences for how this site runs when you use it. In order to remember
+                                your preferences we need to set cookies so that this information can be called whenever
+                                you interact with a page is affected by your preferences.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li>Third Party Cookies
+                    <p>In some special cases we also use cookies provided by trusted third parties. The following
+                        section details which third party cookies you might encounter through this site.</p>
+                    <ol>
+                        <li>This site uses Google Analytics which is one of the most widespread and trusted analytics
+                            solution on the web for helping us to understand how you use the site and ways that we can
+                            improve your experience. These cookies may track things such as how long you spend on the
+                            site and the pages that you visit so we can continue to produce engaging content.
+                            <p>For more information on Google Analytics cookies, see the official Google Analytics page.
+                            </p>
+                        </li>
+                        <li>Third party analytics are used to track and measure usage of this site so that we can
+                            continue to produce engaging content. These cookies may track things such as how long you
+                            spend on the site or pages you visit which helps us to understand how we can improve the
+                            site for you.</li>
+                        <li>From time to time we test new features and make subtle changes to the way that the site is
+                            delivered. When we are still testing new features these cookies may be used to ensure that
+                            you receive a consistent experience whilst on the site whilst ensuring we understand which
+                            optimisations our users appreciate the most.</li>
+                        <li>As we sell products it's important for us to understand statistics about how many of the
+                            visitors to our site actually make a purchase and as such this is the kind of data that
+                            these cookies will track. This is important to you as it means that we can accurately make
+                            business predictions that allow us to monitor our advertising and product costs to ensure
+                            the best possible price.</li>
+                        <li>We use adverts to offset the costs of running this site and provide funding for further
+                            development. The behavioural advertising cookies used by this site are designed to ensure
+                            that we provide you with the most relevant adverts where possible by anonymously tracking
+                            your interests and presenting similar things that may be of interest.</li>
+                        <li>Several partners advertise on our behalf and affiliate tracking cookies simply allow us to
+                            see if our customers have come to the site through one of our partner sites so that we can
+                            credit them appropriately and where applicable allow our affiliate partners to provide any
+                            bonus that they may provide you for making a purchase.</li>
+                        <li>We also use social media buttons and/or plugins on this site that allow you to connect with
+                            your social network in various ways. For these to work the following social media sites
+                            including; {List the social networks whose features you have integrated with your site?:12},
+                            will set cookies through our site which may be used to enhance your profile on their site or
+                            contribute to the data they hold for various purposes outlined in their respective privacy
+                            policies.</li>
+                    </ol>
+                </li>
+                <li>More Information
+                    <p>Hopefully that has clarified things for you and as was previously mentioned if there is something
+                        that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case
+                        it does interact with one of the features you use on our site.</p>
+                    <p>However if you are still looking for more information then you can contact us through one of our
+                        preferred contact methods:</p>
+                    <p>Email: <a href="mailto:info@Legal Trade.com"><span>[info@Legal Trade.com]</span></a></p>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        style="display: none;">
+        <defs>
+            <g id="feature1">
+                <path
+                    d="M31.7592155,18.2000325 C32.0149096,18.19922 32.2461361,18.047689 32.3496777,17.8132831 L32.3542147,17.8028831 L34.9416185,11.9645922 C34.9793731,11.8814736 34.9992226,11.7913675 34.9999518,11.7000427 L34.9999518,0.650059922 C35.0042458,0.295404226 34.7210864,0.00436718068 34.3674411,6.09374048e-05 C34.3622559,-2.03124683e-05 34.3569897,-2.03124683e-05 34.3518045,6.09374048e-05 L22.6851539,6.09374048e-05 C22.4382909,-0.00132031044 22.2121685,0.138104472 22.1018214,0.359510376 L19.5092324,5.55950225 L19.5157139,5.55950225 C19.4692093,5.64928336 19.4448228,5.7488957 19.4444177,5.8500518 L19.4444177,11.0500437 L15.5555341,11.0500437 L15.5555341,0.650059922 C15.5598281,0.295404226 15.2766688,0.00436718068 14.9230234,6.09374048e-05 C14.9178383,-2.03124683e-05 14.9125721,-2.03124683e-05 14.9073869,6.09374048e-05 L3.24073628,6.09374048e-05 C2.99508847,-2.03124683e-05 2.77042443,0.13916072 2.66064448,0.359510376 L0.0680554618,5.55950225 L0.0745369344,5.55950225 C0.0268981111,5.64903961 0.00137731292,5.74865196 0,5.8500518 L0,17.5500335 C0,17.9089955 0.290207934,18.2000325 0.648147256,18.2000325 L5.8333253,18.2000325 L5.8333253,20.8000284 L3.24073628,20.8000284 C2.99508847,20.7999472 2.77042443,20.9391282 2.66064448,21.1594779 L0.0680554618,26.3594698 L0.0745369344,26.3594698 C0.0268981111,26.4490071 0.00137731292,26.5486195 0,26.6500193 L0,38.350001 C0,38.708963 0.290207934,39 0.648147256,39 L12.3147979,39 C12.5704919,38.9991875 12.8017185,38.8476565 12.90526,38.6132506 L12.909797,38.6028506 L15.3286826,33.1500091 L19.4444177,33.1500091 L19.4444177,38.350001 C19.4444177,38.708963 19.7346256,39 20.0925649,39 L31.7592155,39 C32.0149096,38.9991875 32.2461361,38.8476565 32.3496777,38.6132506 L32.3542147,38.6028506 L34.9416185,32.7645597 C34.9793731,32.6814411 34.9992226,32.591335 34.9999518,32.5000102 L34.9999518,21.4500274 C35.0042458,21.0953717 34.7210864,20.8043347 34.3674411,20.8000284 C34.3622559,20.7999472 34.3569897,20.7999472 34.3518045,20.8000284 L26.5740375,20.8000284 L26.5740375,18.2000325 L31.7592155,18.2000325 Z M33.7036573,11.5622429 L32.4073628,14.4872383 L32.4073628,6.00345156 L33.7036573,3.40345562 L33.7036573,11.5622429 Z M23.0857089,1.30005891 L33.3031023,1.30005891 L31.3586605,5.20005281 L21.1412672,5.20005281 L23.0857089,1.30005891 Z M12.9629451,11.0500437 L12.9629451,6.00345156 L14.2592396,3.40345562 L14.2592396,11.0500437 L12.9629451,11.0500437 Z M13.9098883,12.3500416 L12.9629451,14.4872383 L12.9629451,12.3500416 L13.9098883,12.3500416 Z M3.64129128,1.30005891 L13.8586846,1.30005891 L11.9142429,5.20005281 L1.69684952,5.20005281 L3.64129128,1.30005891 Z M1.29629451,16.9000345 L1.29629451,6.50005078 L11.6666506,6.50005078 L11.6666506,11.0500437 L5.8333253,11.0500437 L5.8333253,12.3500416 L11.6666506,12.3500416 L11.6666506,16.9000345 L1.29629451,16.9000345 Z M3.64129128,22.1000264 L5.8333253,22.1000264 L5.8333253,26.0000203 L1.69684952,26.0000203 L3.64129128,22.1000264 Z M11.6666506,37.700002 L1.29629451,37.700002 L1.29629451,27.3000183 L5.8333253,27.3000183 L5.8333253,33.1500091 L7.12961981,33.1500091 L7.12961981,27.3000183 L11.6666506,27.3000183 L11.6666506,37.700002 Z M11.9142429,26.0000203 L7.12961981,26.0000203 L7.12961981,22.1000264 L13.8586846,22.1000264 L11.9142429,26.0000203 Z M12.9629451,35.2872058 L12.9629451,33.1500091 L13.9098883,33.1500091 L12.9629451,35.2872058 Z M14.2592396,31.8500112 L12.9629451,31.8500112 L12.9629451,26.8034191 L14.2592396,24.2034231 L14.2592396,31.8500112 Z M19.5092324,26.3594698 L19.5157139,26.3594698 C19.4692093,26.4492509 19.4448228,26.5488632 19.4444177,26.6500193 L19.4444177,31.8500112 L15.5555341,31.8500112 L15.5555341,21.4500274 C15.5598281,21.0953717 15.2766688,20.8043347 14.9230234,20.8000284 C14.9178383,20.7999472 14.9125721,20.7999472 14.9073869,20.8000284 L7.12961981,20.8000284 L7.12961981,18.2000325 L12.3147979,18.2000325 C12.5704919,18.19922 12.8017185,18.047689 12.90526,17.8132831 L12.909797,17.8028831 L15.3286826,12.3500416 L19.4444177,12.3500416 L19.4444177,17.5500335 C19.4444177,17.9089955 19.7346256,18.2000325 20.0925649,18.2000325 L25.277743,18.2000325 L25.277743,20.8000284 L22.6851539,20.8000284 C22.4382909,20.7986472 22.2121685,20.938072 22.1018214,21.1594779 L19.5092324,26.3594698 Z M25.277743,22.1000264 L25.277743,26.0000203 L21.1412672,26.0000203 L23.0857089,22.1000264 L25.277743,22.1000264 Z M31.1110683,37.700002 L20.7407122,37.700002 L20.7407122,33.1500091 L26.5740375,33.1500091 L26.5740375,31.8500112 L20.7407122,31.8500112 L20.7407122,27.3000183 L31.1110683,27.3000183 L31.1110683,37.700002 Z M33.7036573,32.3622104 L32.4073628,35.2872058 L32.4073628,26.8034191 L33.7036573,24.2034231 L33.7036573,32.3622104 Z M33.3031023,22.1000264 L31.3586605,26.0000203 L26.5740375,26.0000203 L26.5740375,22.1000264 L33.3031023,22.1000264 Z M25.277743,11.0500437 L25.277743,16.9000345 L20.7407122,16.9000345 L20.7407122,6.50005078 L31.1110683,6.50005078 L31.1110683,16.9000345 L26.5740375,16.9000345 L26.5740375,11.0500437 L25.277743,11.0500437 Z">
+                </path>
+            </g>
+            <g id="feature2">
+                <path
+                    d="M0.662986221,15 C0.296599147,15 0,14.7015979 0,14.3329835 C0,10.2892917 3.26941718,7 7.2886763,7 L8.33739313,7 C8.70378021,7 9,7.29840205 9,7.66701646 C9,8.03563087 8.70378021,8.33403292 8.33739313,8.33403292 L7.2886763,8.33403292 C4.00029503,8.33403292 1.32559318,11.024994 1.32559318,14.3329835 C1.32559318,14.7015979 1.02937329,15 0.662986221,15 Z">
+                </path>
+                <path
+                    d="M9.21922606,12 C8.91023529,12 8.62098565,11.8158473 8.51240975,11.5196374 C8.17209067,10.5964021 8,9.62743749 8,8.63993408 C8,3.87544633 12.0370503,0 16.9997854,0 C21.9629497,0 26,3.87544633 26,8.63993408 C26,9.56234554 25.8489378,10.4699259 25.5515343,11.3387806 C25.4219297,11.7165614 24.9970674,11.9217247 24.6043917,11.7981324 C24.2112867,11.673716 23.9975681,11.266685 24.1263142,10.8889042 C24.3739361,10.1654765 24.4996781,9.40867899 24.4996781,8.63993408 C24.4996781,4.67014556 21.1351119,1.43985172 16.9997854,1.43985172 C12.8644589,1.43985172 9.49989274,4.67014556 9.49989274,8.63993408 C9.49989274,9.46388355 9.64365919,10.2709421 9.92604248,11.0400989 C10.0642301,11.4149959 9.85952361,11.8261466 9.46899366,11.9583906 C9.38659612,11.9864049 9.30205284,12 9.21922606,12 Z">
+                </path>
+                <path
+                    d="M16.4998569,8 C16.2234621,8 16,7.55250364 16,6.99971386 L16,4.99971379 C16,4.44692415 16.2234621,4 16.4998569,4 C16.7762518,4 17,4.44692415 17,4.99971379 L17,6.99971386 C17,7.55250364 16.7762518,8 16.4998569,8 Z">
+                </path>
+                <path
+                    d="M31.1943993,39 L3.80560067,39 C1.70763602,39 0,37.2388797 0,35.0742659 L0,14.9261557 C0,12.7615419 1.70763602,11 3.80560067,11 L31.1943993,11 C33.2927726,11 34.9999999,12.7615419 34.9999999,14.9261557 L34.9999999,35.0738443 C35.0004086,37.2388797 33.2927726,39 31.1943993,39 Z M3.80560067,12.4739949 C2.49524129,12.4739949 1.4284797,13.5740099 1.4284797,14.9261557 L1.4284797,35.0738443 C1.4284797,36.4259901 2.49524129,37.5264267 3.80560067,37.5264267 L31.1943993,37.5264267 C32.5051673,37.5264267 33.5715202,36.4259901 33.5715202,35.0742659 L33.5715202,14.9261557 C33.5715202,13.5740099 32.5047586,12.4739949 31.1943993,12.4739949 L3.80560067,12.4739949 Z">
+                </path>
+                <path
+                    d="M34.2630027,30 L25.7892185,30 C23.1485921,30 21,27.9812492 21,25.5001981 C21,23.0187508 23.1485921,21 25.7892185,21 L34.2630027,21 C34.6702907,21 35,21.3097848 35,21.6924601 L35,29.3079361 C35,29.6906114 34.6702907,30 34.2630027,30 Z M25.7892185,22.384524 C23.9610601,22.384524 22.4735733,23.7821207 22.4735733,25.5001981 C22.4735733,27.2178793 23.9610601,28.615476 25.7892185,28.615476 L33.5264268,28.615476 L33.5264268,22.384524 L25.7892185,22.384524 Z">
+                </path>
+                <path
+                    d="M25.4997956,29 C24.1215565,29 23,27.8784435 23,26.5002044 C23,25.1215565 24.1215565,24 25.4997956,24 C26.8784435,24 28,25.1215565 28,26.5002044 C28,27.8784435 26.8784435,29 25.4997956,29 Z M25.4997956,25.4285131 C24.9091801,25.4285131 24.4285131,25.9091801 24.4285131,26.5002044 C24.4285131,27.09082 24.9091801,27.571487 25.4997956,27.571487 C26.0908199,27.571487 26.5714869,27.09082 26.5714869,26.5002044 C26.5714869,25.9091801 26.0908199,25.4285131 25.4997956,25.4285131 Z">
+                </path>
+                <path
+                    d="M2.99985697,15 L1.00014303,15 C0.447432482,15 0,14.7762518 0,14.4998569 C0,14.2234621 0.447432482,14 1.00014303,14 L2.99985697,14 C3.55256752,14 4,14.2234621 4,14.4998569 C4,14.7762518 3.55256752,15 2.99985697,15 Z">
+                </path>
+                <path
+                    d="M31.2736842,15 L28.434903,15 C28.033518,15 27.7085873,14.7762518 27.7085873,14.4998569 C27.7085873,14.2234621 28.033518,14 28.434903,14 L31.2736842,14 C31.6750692,14 32,14.2234621 32,14.4998569 C32,14.7762518 31.6750692,15 31.2736842,15 Z M25.5965374,15 L22.7577562,15 C22.3563711,15 22.0314404,14.7762518 22.0314404,14.4998569 C22.0314404,14.2234621 22.3563711,14 22.7577562,14 L25.5965374,14 C25.9979225,14 26.3224377,14.2234621 26.3224377,14.4998569 C26.3224377,14.7762518 25.9979225,15 25.5965374,15 Z M19.919806,15 L17.0810249,15 C16.6796399,15 16.3547092,14.7762518 16.3547092,14.4998569 C16.3547092,14.2234621 16.6796399,14 17.0810249,14 L19.919806,14 C20.3211911,14 20.6457063,14.2234621 20.6457063,14.4998569 C20.6457063,14.7762518 20.3211911,15 19.919806,15 Z M14.2422437,15 L11.4034625,15 C11.0020775,15 10.6775623,14.7762518 10.6775623,14.4998569 C10.6775623,14.2234621 11.0020775,14 11.4034625,14 L14.2422437,14 C14.6436288,14 14.9685596,14.2234621 14.9685596,14.4998569 C14.9685596,14.7762518 14.6436288,15 14.2422437,15 Z M8.56468136,15 L5.72631579,15 C5.32493069,15 5,14.7762518 5,14.4998569 C5,14.2234621 5.32493069,14 5.72631579,14 L8.56509695,14 C8.96648194,14 9.29099726,14.2234621 9.29099726,14.4998569 C9.29099726,14.7762518 8.96606646,15 8.56468136,15 Z">
+                </path>
+                <path
+                    d="M33.9998571,15 L32.0001431,15 C31.4474324,15 31,14.7762518 31,14.4998569 C31,14.2234621 31.4474324,14 32.0001431,14 L33.9998571,14 C34.5525676,14 35,14.2234621 35,14.4998569 C35,14.7762518 34.5525676,15 33.9998571,15 Z">
+                </path>
+                <path
+                    d="M16.4538369,12 L16.4538369,9.95871179 C16.4538369,9.9079274 16.4788335,9.88274152 16.5276173,9.88274152 L18.277382,9.88274152 C19.0905792,9.88274152 19.5461631,10.3625104 19.5461631,11.0693642 C19.5461631,11.4682081 19.4010213,11.7894303 19.1365408,12 L20.8548582,12 C20.9439591,11.720479 21,11.4124691 21,11.0565648 C21,10.0094963 20.396452,9.32824118 19.8791829,9.12592899 L19.8791829,9.10033036 C20.4089504,8.81007435 20.852036,8.2555739 20.852036,7.28406278 C20.852036,5.90834022 20.0146486,5 18.2402903,5 L15.1233706,5 C15.0495901,5 15,5.04995869 15,5.12634181 L15,12 L16.4538369,12 Z M16.4538369,6.3876961 C16.4538369,6.33773742 16.4788335,6.31213869 16.5276173,6.31213869 L18.2036017,6.31213869 C18.9426152,6.31213869 19.3990055,6.76672176 19.3990055,7.44797687 C19.3990055,8.11684558 18.9426152,8.57060283 18.2036017,8.57060283 L16.5276173,8.57060283 C16.4788335,8.57060283 16.4538369,8.5450041 16.4538369,8.49504542 L16.4538369,6.3876961 Z">
+                </path>
+            </g>
+            <g id="feature3">
+                <path
+                    d="M38.890664,32.141745 L34.1405151,25.0138861 L34.9731562,24.7538876 C35.315865,24.646882 35.5068817,24.2823966 35.3998766,23.9396861 C35.3954891,23.9255487 35.3906142,23.9115737 35.3852517,23.8978426 L33.9247174,20.1415142 L36.8990854,17.3757802 C37.1618451,17.1312191 37.1766324,16.719934 36.9320726,16.457173 C36.9215102,16.4457981 36.9104603,16.4348294 36.8990854,16.4241857 L33.9247174,13.6591017 L35.3859017,9.90277333 C35.5159816,9.56818776 35.3502334,9.19151494 35.0156495,9.06135319 C35.0018371,9.05599072 34.9878623,9.05111575 34.9738062,9.04672827 L31.0634482,7.82733531 L30.7215519,3.81685845 C30.7064396,3.63835323 30.618853,3.47390418 30.4791045,3.36186108 C30.3400873,3.25014297 30.1610142,3.20090576 29.9844598,3.22601186 L25.9148536,3.78955861 L23.8310573,0.315978655 C23.6465406,0.0080429318 23.2472823,-0.091975241 22.9394294,0.0925424442 C22.931467,0.0973361665 22.9236671,0.102211138 22.9158672,0.107329859 L19.5001539,2.35566688 L16.0850907,0.107329859 C15.7853626,-0.0901877513 15.3822045,-0.00731322958 15.1846879,0.292416291 C15.1795692,0.300134996 15.1746942,0.308016201 15.1699005,0.315978655 L13.0860229,3.7908586 L9.01706674,3.22731185 C8.66152056,3.17791214 8.33319285,3.42612946 8.28379338,3.78167741 C8.2821684,3.79313359 8.28094966,3.80467102 8.27997467,3.81620846 L7.93742836,7.82668531 L4.0303204,9.04607828 C3.68761159,9.15308391 3.4965949,9.51756931 3.60359999,9.86027983 C3.60798745,9.87441725 3.6128624,9.88839217 3.61822484,9.90212334 L5.07875912,13.6584517 L2.10114116,16.4241857 C1.83838149,16.6687468 1.82359415,17.0800319 2.06815402,17.3427929 C2.07871641,17.3541678 2.08976629,17.3651365 2.10114116,17.3757802 L5.07550915,20.1408643 L3.61432488,23.8971926 C3.48424503,24.2317781 3.64999325,24.608451 3.98457714,24.7386127 C3.9983895,24.7439752 4.01236435,24.7488502 4.02642044,24.7532376 L4.88896116,25.0216861 L0.0965627362,32.8092911 C-0.0916102388,33.1150331 0.00361373643,33.5153496 0.309354196,33.7035235 C0.446015225,33.7876168 0.608919722,33.8182478 0.766705524,33.7894855 L7.28800409,32.6038923 L8.46319145,38.4798584 C8.51470339,38.7375819 8.71628247,38.9389183 8.97408595,38.9901055 C9.0156855,38.9974992 9.05793505,39.0007492 9.10018459,38.9998554 C9.31744475,38.9998554 9.52040507,38.8913873 9.64097877,38.7106071 L14.2013297,31.8700466 L15.1691693,33.4839873 C15.2603308,33.6360864 15.4096667,33.7443108 15.5825648,33.7836355 C15.6309893,33.7947667 15.68047,33.8002104 15.7301132,33.7998854 C15.8571869,33.7998854 15.981498,33.7625919 16.0876094,33.692636 L19.5000727,31.444299 L22.9151359,33.692636 C23.2148639,33.8901537 23.6180221,33.8072791 23.8155387,33.5075496 C23.8206574,33.4998309 23.8255324,33.4919497 23.8303261,33.4839873 L24.7988157,31.8693966 L29.3591666,38.7106071 C29.4797403,38.8913873 29.6827006,38.9998554 29.8999608,38.9998554 C29.9422915,38.9999367 29.9845411,38.9957929 30.0260594,38.9875055 C30.2838629,38.9363183 30.485442,38.734982 30.5369539,38.4772584 L31.7199412,32.5499426 L38.2913704,33.1498892 C38.6488666,33.1822265 38.9649257,32.918653 38.9973441,32.5611551 C39.0107502,32.4132809 38.9731319,32.2652443 38.890664,32.141745 Z M9.43176227,36.6832688 L8.43727298,31.7198974 C8.36780497,31.3723119 8.03273358,31.1444883 7.68393108,31.2077004 L1.9672426,32.2476944 L6.16944738,25.4214338 L7.93677836,25.9726306 L8.27867468,29.9831075 C8.29378702,30.1616127 8.38137358,30.3260617 8.52112207,30.4381048 C8.66038308,30.5492542 8.8392124,30.5984102 9.01576675,30.573954 L13.085373,30.0104073 L13.4617189,30.6383037 L9.43176227,36.6832688 Z M25.0205445,28.9749633 L23.0640656,32.2366445 L19.8576501,30.1228566 C19.6407149,29.98002 19.3595929,29.98002 19.1426578,30.1228566 L15.9355923,32.2340445 L13.9791133,28.9717133 C13.8617896,28.7759019 13.6502981,28.6559776 13.4220693,28.6558151 C13.3920072,28.6557339 13.3620262,28.6579276 13.3323703,28.6623151 L9.51626137,29.190112 L9.19516482,25.4272837 C9.17265881,25.1637915 8.99277325,24.9401928 8.74016972,24.861787 L5.07875912,23.7190936 L6.44374443,20.2013139 C6.54034964,19.9530153 6.47567534,19.6709982 6.28059619,19.489568 L3.49862612,16.899983 L6.28384615,14.3103979 C6.4789253,14.1289677 6.54359961,13.8469506 6.4469944,13.598652 L5.08200908,10.0795723 L8.74471967,8.9375289 C8.9973232,8.85912311 9.17720876,8.6355244 9.19971477,8.37203217 L9.52081132,4.60920388 L13.3369202,5.13765083 C13.5962675,5.17470062 13.8525272,5.05250132 13.9869133,4.82760262 L15.9433922,1.56592144 L19.1426578,3.67710926 C19.3595929,3.81994593 19.6407149,3.81994593 19.8576501,3.67710926 L23.0647156,1.56592144 L25.0211945,4.82825262 C25.1560681,5.05079508 25.4100528,5.17226313 25.6679375,5.13765083 L29.4840465,4.60985388 L29.805143,8.37268216 C29.827649,8.63617439 30.0075346,8.8597731 30.2601381,8.9381789 L33.9228487,10.0808723 L32.5539634,13.598652 C32.4573582,13.8469506 32.5220325,14.1289677 32.7171117,14.3103979 L35.5016817,16.899983 L32.7164617,19.489568 C32.5213825,19.6709982 32.4567082,19.9530153 32.5533135,20.2013139 L33.9182988,23.7203936 L30.2588381,24.862437 C30.0062346,24.9408428 29.826349,25.1644415 29.803843,25.4279337 L29.4827465,29.190762 L25.6672876,28.6649151 C25.4091591,28.630384 25.1552556,28.7521771 25.0205445,28.9749633 Z M31.2585274,31.1999004 C30.9291434,31.1743881 30.6317716,31.396768 30.5630349,31.7198974 L29.5704955,36.6813188 L25.5405389,30.6363537 L25.9162349,30.0097573 L29.9851911,30.5733041 C30.3407373,30.6227038 30.669065,30.3744864 30.7184644,30.0189385 C30.7200894,30.0074823 30.7213082,29.9959449 30.7222832,29.9844074 L31.0648295,25.9739306 L32.8490603,25.4175338 L37.055165,31.7296474 L31.2585274,31.1999004 Z">
+                </path>
+                <path
+                    d="M28.9999752,13.7142857 C28.9999752,12.6491518 28.1493305,11.7857143 27.0999777,11.7857143 L22.6666501,11.7857143 L22.6666501,9.21428571 C22.6683918,7.44088393 21.2534478,6.00176786 19.5063209,6 C19.5041834,6 19.5021251,6 19.4999876,6 C19.1502297,6 18.8666551,6.28783929 18.8666551,6.64285714 L18.8666551,9.70542857 L17.7266566,12.0145714 L15.6885926,13.6699286 C15.6680093,13.3357232 15.3965471,13.0744821 15.0666601,13.0714286 L10.6333325,13.0714286 C10.2835746,13.0714286 10,13.3592679 10,13.7142857 L10,23.3571429 C10,23.7121607 10.2835746,24 10.6333325,24 L15.0666601,24 C15.4164179,24 15.6999926,23.7121607 15.6999926,23.3571429 L25.1999802,23.3571429 C26.2471955,23.3518393 27.0947527,22.4915357 27.0999777,21.4285714 C27.0978402,21.0970179 27.0105195,20.7717321 26.8466447,20.4848571 C26.9634945,20.4108482 27.0714777,20.3232589 27.1683776,20.2238571 C27.7824726,19.6176429 27.91096,18.6648482 27.4799772,17.9134286 C27.596827,17.8394196 27.7048102,17.7518304 27.8017101,17.6524286 C28.4158051,17.0462143 28.5442925,16.0934196 28.1133097,15.342 C28.2301596,15.2679911 28.3381427,15.1804018 28.4350426,15.081 C28.7985755,14.7222857 29.0025877,14.2288125 28.9999752,13.7142857 Z M14.4334067,22.7142857 L11.2667442,22.7142857 L11.2667442,14.3571429 L14.4334067,14.3571429 L14.4334067,22.7142857 Z M27.5395105,14.172 C27.4240064,14.2919732 27.2651983,14.3588304 27.0999777,14.3571429 L24.5666477,14.3571429 L24.5666477,15.6428571 L26.4666452,15.6428571 C26.8164031,15.6428571 27.0999777,15.9306964 27.0999777,16.2857143 C27.1005319,16.4589643 27.0303903,16.6246607 26.9061779,16.7434286 C26.7906739,16.8634018 26.6318658,16.9302589 26.4666452,16.9285714 L23.9333152,16.9285714 L23.9333152,18.2142857 L25.8333127,18.2142857 C26.1830706,18.2142857 26.4666452,18.502125 26.4666452,18.8571429 C26.4671994,19.0303929 26.3970578,19.1960893 26.2728454,19.3148571 C26.1573414,19.4348304 25.9985333,19.5016875 25.8333127,19.5 L23.2999827,19.5 L23.2999827,20.7857143 L25.1999802,20.7857143 C25.549738,20.7857143 25.8333127,21.0735536 25.8333127,21.4285714 C25.8338668,21.6018214 25.7637253,21.7675179 25.6395129,21.8862857 C25.5240089,22.0062589 25.3652008,22.0731161 25.1999802,22.0714286 L15.6999926,22.0714598 L15.6999926,15.3085714 L18.6291554,12.9306429 C18.700722,12.8723839 18.7590677,12.7991786 18.8001552,12.7159286 L20.0668202,10.1445 C20.1106785,10.0552232 20.1333993,9.95686607 20.1333201,9.85714286 L20.1333201,7.39564286 C20.8937941,7.66652679 21.4020435,8.39625 21.3999851,9.21428571 L21.3999851,12.4285714 C21.3999851,12.7835893 21.6835598,13.0714286 22.0333176,13.0714286 L27.0999777,13.0714286 C27.4497356,13.0714286 27.7333102,13.3592679 27.7333102,13.7142857 C27.7339435,13.8874554 27.6637228,14.0531518 27.5395105,14.172 Z">
+                </path>
+            </g>
+            <g id="feature4">
+                <path
+                    d="M2,29 L3.38461538,29 C3.38954808,24.7962212 6.79622115,21.3895481 11,21.3846154 L11,20 C6.03182692,20.0057115 2.00571154,24.0318269 2,29 Z">
+                </path>
+                <path
+                    d="M18.6153846,28 C18.6104519,32.2037788 15.2037788,35.6104519 11,35.6153846 L11,37 C15.9681731,36.9942885 19.9942885,32.9681731 20,28 L18.6153846,28 Z">
+                </path>
+                <path
+                    d="M35.7501702,0 L8.45091736,0 C6.65696646,0.00211245659 5.20311875,1.45597008 5.20100631,3.24993321 L5.20100631,18.5928679 C0.0274729074,21.8174516 -1.55247135,28.6254117 1.67200915,33.7989804 C4.89648965,38.9725491 11.7044846,40.5525041 16.8779367,37.3279204 C19.1366249,35.9201306 20.8105728,33.7436503 21.5915265,31.1993588 L29.9002491,31.1993588 L29.9002491,29.8993856 L27.820306,29.8993856 L26.8095836,25.3494791 L35.7500889,25.3494791 C37.5440398,25.3473666 38.9978876,23.893509 39,22.0995458 L39,3.24993321 C38.9978876,1.45597008 37.5441211,0.00219370492 35.7501702,0 Z M20.4801381,30.3868755 C19.3662311,34.6853997 15.4913622,37.6903692 11.0508462,37.6992253 C5.63933806,37.7260372 1.23075247,33.3608894 1.20394071,27.9493444 C1.17712894,22.5377993 5.54224697,18.1291837 10.9537551,18.1023717 C16.3652633,18.0755598 20.7738488,22.4407076 20.8006606,27.8522526 C20.8048855,28.7074726 20.6971509,29.559605 20.4801381,30.3868755 Z M21.9185488,29.8993856 C21.9263485,29.8577864 21.9282985,29.8168373 21.9354483,29.7752381 C21.9787534,29.5334431 22.0123899,29.292948 22.0361955,29.0537529 C22.0446453,28.9725046 22.0530951,28.8919063 22.0595949,28.8113079 C22.0842942,28.5220639 22.1005438,28.2341198 22.1005438,27.9494256 C22.1005438,27.689431 22.0881941,27.4294363 22.0693446,27.1648918 C22.0634948,27.0862434 22.055045,27.007595 22.0478952,26.9289466 C22.0296957,26.7378505 22.0069463,26.5467545 21.9783471,26.3563084 C21.9672974,26.27766 21.9562477,26.1983616 21.9425981,26.1190632 C21.8990493,25.8623185 21.8496506,25.6068738 21.7879023,25.352729 L21.7879023,25.3494791 L25.4804513,25.3494791 L26.4898736,29.8993856 L21.9185488,29.8993856 Z M37.7001168,22.0995458 C37.7001168,23.1764925 36.8271095,24.0495058 35.7501702,24.0495058 L21.3855633,24.0495058 C21.3738637,24.0170064 21.3576141,23.9845071 21.3452645,23.9539577 C21.253617,23.7199625 21.1554696,23.4892173 21.0482226,23.261722 C21.032623,23.2292226 21.0202733,23.1967233 21.0040238,23.162924 C20.8798772,22.9029293 20.7440309,22.6539845 20.5997349,22.4063395 C20.558786,22.337441 20.5152372,22.2704923 20.4736383,22.2015938 C20.3631413,22.0217912 20.2476882,21.8447511 20.1271978,21.6705547 C20.0751992,21.5951562 20.0225507,21.5204077 19.9679521,21.4463093 C19.8379557,21.266913 19.7001595,21.0927165 19.5578134,20.9211201 C19.5253143,20.8814709 19.496715,20.8385718 19.462916,20.7995726 L37.7001168,20.7995726 L37.7001168,22.0995458 Z M37.7001168,19.4995993 L18.1551518,19.4995993 C18.0524546,19.4131511 17.9426076,19.3371026 17.8373105,19.2545543 C17.7157638,19.1596563 17.5955171,19.0595583 17.4707205,18.9724601 C17.3257745,18.8691122 17.1762786,18.7774641 17.0267826,18.6780162 C16.9013361,18.5967678 16.7778395,18.5122696 16.649143,18.4362211 C16.4931473,18.343923 16.3326016,18.2620247 16.172706,18.1762265 C16.0427096,18.1112278 15.917263,18.0371293 15.7866166,17.9747306 C15.6202211,17.8954322 15.4492758,17.8271836 15.2789805,17.7556851 C15.148984,17.7017362 15.0189876,17.6425874 14.8889912,17.5931885 C14.711546,17.5281898 14.530201,17.4729409 14.3501559,17.4163921 C14.2201595,17.3754429 14.090163,17.3286439 13.9601666,17.2928946 C13.7697218,17.2402457 13.5760271,17.2012465 13.3829824,17.1628973 C13.2575358,17.1355979 13.1340392,17.1017986 13.0072927,17.078399 C12.7934485,17.0400498 12.5776544,17.0134004 12.3612103,16.9900009 C12.2526633,16.9770011 12.1447663,16.9562015 12.0362192,16.9464517 C11.7092782,16.9152524 11.3810372,16.8996527 11.0508462,16.8996527 C10.6998558,16.8996527 10.3501654,16.9224022 10.0017749,16.9562015 C9.93092686,16.9633514 9.86072878,16.9692013 9.78988072,16.9776511 C9.45318993,17.0166503 9.11779911,17.0699492 8.7856582,17.1401478 C8.72585984,17.1531475 8.66736144,17.1687472 8.60756307,17.1823969 C8.29727782,17.2534892 7.99032372,17.3373375 7.68653828,17.4339417 C7.64493942,17.4475914 7.6020406,17.4586412 7.56044173,17.4729409 C7.23545063,17.5808387 6.92020926,17.7075861 6.60756781,17.8453833 C6.57246877,17.860983 6.53541979,17.8713827 6.50097073,17.8876324 L6.50097073,3.24993321 C6.50097073,2.17298659 7.37397809,1.29997329 8.45091736,1.29997329 L35.7501702,1.29997329 C36.8271095,1.29997329 37.7001168,2.17298659 37.7001168,3.24993321 L37.7001168,19.4995993 Z">
+                </path>
+                <path
+                    d="M14.9167607,29.3398333 C14.7841855,28.8205833 14.4977032,28.3535 14.0948948,28 C15.19791,27.0319167 15.3073199,25.353 14.3393797,24.2499167 C13.9859015,23.8470833 13.5188471,23.5605833 12.9996292,23.428 L12.9996292,22 L11.6663782,22 L11.6663782,23.3333333 L10.3331273,23.3333333 L10.3331273,22 L8.99987639,22 L8.99987639,23.3333333 L7.66662546,23.3333333 C7.29848155,23.3333333 7,23.6318333 7,24 L7,32 C7,32.3681667 7.29848155,32.6666667 7.66662546,32.6666667 L8.99987639,32.6666667 L8.99987639,34 L10.3331273,34 L10.3331273,32.6666667 L11.6663782,32.6666667 L11.6663782,34 L12.9996292,34 L12.9996292,32.572 C14.4214579,32.2089167 15.2798216,30.7618333 14.9167607,29.3398333 Z M12.3330037,31.3333333 L8.33325092,31.3333333 L8.33325092,28.6666667 L12.3330037,28.6666667 C13.0693749,28.6666667 13.6662546,29.2635833 13.6662546,30 C13.6662546,30.7364167 13.0692915,31.3333333 12.3330037,31.3333333 Z M12.3330037,27.3333333 L8.33325092,27.3333333 L8.33325092,24.6666667 L12.3330037,24.6666667 C13.0693749,24.6666667 13.6662546,25.2635833 13.6662546,26 C13.6662546,26.7364167 13.0692915,27.3333333 12.3330037,27.3333333 Z">
+                </path>
+                <path
+                    d="M35.3206522,3 L32.6032609,3 L32.6032609,4.26315789 L33.6807065,4.26315789 L26.576087,10.8682105 L23.6447011,7.05410524 C23.5219939,6.89407893 23.326087,6.79618419 23.1148098,6.78947367 C22.9027683,6.7808684 22.698964,6.86699998 22.5665761,7.02126314 L16.9735054,13.3768421 L14.1039402,10.1747368 C13.9737602,10.022921 13.7730978,9.93836839 13.564538,9.94736839 C13.3567425,9.95226313 13.1627038,10.0453421 13.0380435,10.2 L11,12.7263157 L12.0869565,13.4842105 L13.609375,11.5970526 L16.4558424,14.7726315 C16.5850034,14.9167894 16.7764096,15.0000789 16.9782609,14.9999999 C17.1808764,14.9990526 17.3724524,14.9140263 17.5006793,14.7682105 L23.0523098,8.45999997 L25.9334239,12.2090526 C26.1516644,12.4927894 26.576002,12.5583157 26.881199,12.355421 C26.91143,12.3353684 26.9397928,12.3130263 26.9660326,12.2886315 L34.6413043,5.15621052 L34.6413043,6.15789472 L36,6.15789472 L36,3.63157894 C36,3.28278947 35.695822,3 35.3206522,3 Z">
+                </path>
+                <rect width="1" height="1" x="9" y="3"></rect>
+                <rect width="1" height="1" x="9" y="7"></rect>
+                <rect width="1" height="1" x="9" y="9"></rect>
+                <rect width="1" height="1" x="9" y="12"></rect>
+                <rect width="1" height="1" x="9" y="14"></rect>
+                <rect width="1" height="1" x="18" y="17"></rect>
+                <rect width="1" height="1" x="21" y="17"></rect>
+                <rect width="1" height="1" x="23" y="17"></rect>
+                <rect width="1" height="1" x="26" y="17"></rect>
+                <rect width="1" height="1" x="29" y="17"></rect>
+                <rect width="1" height="1" x="31" y="17"></rect>
+                <rect width="1" height="1" x="33" y="17"></rect>
+            </g>
+            <g id="medium">
+                <path
+                    d="M24,2.71454005 L22.6756996,2.71454005 C22.3308726,2.71454005 21.4285785,3.10998393 21.4285785,3.44662439 L21.4285785,15.6716108 C21.4285785,16.0090891 22.3308726,16.2857741 22.6756996,16.2857741 L24,16.2857741 L24,19 L15.4285289,19 L15.4285289,16.2857741 L17.1432398,16.2857741 L17.1432398,3.61884565 L16.8448394,3.61884565 L12.7187203,18.9999476 L9.52411028,18.9999476 L5.45136196,3.61884565 L5.14289257,3.61884565 L5.14289257,16.2857218 L6.85685942,16.2857218 L6.85685942,18.9999476 L0,19 L0,16.2857218 L0.951002356,16.2857218 C1.32435002,16.2857218 1.71401645,16.0090891 1.71401645,15.6715585 L1.71401645,3.44662439 C1.71401645,3.10993157 1.32439962,2.71454005 0.951002356,2.71454005 L0,2.71454005 L0,0 L8.88628942,3.7206009e-16 L11.7877568,10.8570082 L11.865829,10.8570082 L14.7959162,0 L24,0 L24,2.71454005 Z">
+                </path>
+            </g>
+            <g id="twitter">
+                <path
+                    d="M24,2.24930769 C23.1075,2.63076923 22.1565,2.88361538 21.165,3.00638462 C22.185,2.413 22.9635,1.48053846 23.3295,0.356615385 C22.3785,0.909076923 21.3285,1.29930769 20.2095,1.51707692 C19.3065,0.580230769 18.0195,0 16.6155,0 C13.8915,0 11.6985,2.15430769 11.6985,4.79530769 C11.6985,5.17530769 11.7315,5.54069231 11.8125,5.88853846 C7.722,5.69415385 4.1025,3.78392308 1.671,0.874 C1.2465,1.59161538 0.9975,2.413 0.9975,3.29723077 C0.9975,4.95753846 1.875,6.42930769 3.183,7.28138462 C2.3925,7.26676923 1.617,7.04315385 0.96,6.69092308 C0.96,6.70553846 0.96,6.72453846 0.96,6.74353846 C0.96,9.07323077 2.6655,11.0083077 4.902,11.4540769 C4.5015,11.5607692 4.065,11.6119231 3.612,11.6119231 C3.297,11.6119231 2.979,11.5943846 2.6805,11.5300769 C3.318,13.4286154 5.127,14.8243846 7.278,14.8696923 C5.604,16.1456154 3.4785,16.9143846 1.1775,16.9143846 C0.774,16.9143846 0.387,16.8968462 0,16.8486154 C2.1795,18.2180769 4.7625,19 7.548,19 C16.602,19 21.552,11.6923077 21.552,5.358 C21.552,5.14607692 21.5445,4.94146154 21.534,4.73830769 C22.5105,4.06307692 23.331,3.21976923 24,2.24930769 Z">
+                </path>
+            </g>
+            <g id="facebook">
+                <path
+                    d="M9.62342935,0.00395326821 L7.22488407,0 C4.5302007,0 2.78877793,1.83530477 2.78877793,4.67592564 L2.78877793,6.83184045 L0.377147915,6.83184045 C0.16875445,6.83184045 0,7.00538893 0,7.2194584 L0,10.3431333 C0,10.5572028 0.168946872,10.7305536 0.377147915,10.7305536 L2.78877793,10.7305536 L2.78877793,18.6125797 C2.78877793,18.8266492 2.95753238,19 3.16592584,19 L6.31241702,19 C6.52081048,19 6.68956493,18.8264515 6.68956493,18.6125797 L6.68956493,10.7305536 L9.50932287,10.7305536 C9.71771633,10.7305536 9.88647078,10.5572028 9.88647078,10.3431333 L9.88762532,7.2194584 C9.88762532,7.11667343 9.84779388,7.01823705 9.77717485,6.94549692 C9.70655583,6.87275678 9.61034463,6.83184045 9.51028498,6.83184045 L6.68956493,6.83184045 L6.68956493,5.00424456 C6.68956493,4.12582837 6.89334026,3.67989971 8.00727357,3.67989971 L9.62304451,3.67930672 C9.83124555,3.67930672 10,3.50575825 10,3.29188644 L10,0.391373553 C10,0.177699406 9.83143797,0.00434859503 9.62342935,0.00395326821 Z">
+                </path>
+            </g>
+            <g id="reddit">
+                <path
+                    d="M24,8.76926941 C24,7.15719857 22.6603609,5.84620352 21.0130678,5.84620352 C20.3544493,5.84620352 19.728687,6.05666426 19.2179216,6.43812436 C17.5512134,5.30543633 15.367766,4.63020811 13.0454263,4.45920876 L14.2984443,1.58291193 L17.943995,2.41598571 C18.0604854,3.51944308 19.0043559,4.38467058 20.1617922,4.38467058 C21.3968886,4.38467058 22.4019913,3.40105891 22.4019913,2.19237117 C22.4019913,0.983683423 21.3968886,7.17526976e-05 20.1617922,7.17526976e-05 C19.3792159,7.17526976e-05 18.6907281,0.39614718 18.2904792,0.993914153 L14.0296204,0.0190716809 C13.6682016,-0.0613126309 13.3142502,0.118455921 13.1708774,0.444377767 L11.4384568,4.41974737 C8.93092719,4.50451628 6.54138146,5.19582136 4.73727442,6.40012451 C4.24592408,6.04351047 3.63658992,5.84620352 2.98693217,5.84620352 C1.33963908,5.84620352 0,7.15719857 0,8.76926941 C0,9.83764999 0.595892968,10.8037233 1.50989421,11.2991829 C1.49794648,11.4277978 1.49346609,11.5593358 1.49346609,11.6923353 C1.49346609,15.7217816 6.1829496,19 11.9477287,19 C17.7110143,19 22.4019913,15.7217816 22.4019913,11.6923353 C22.4019913,11.5783357 22.3975109,11.4657977 22.3900436,11.3532596 C23.3637834,10.8680307 24,9.87857291 24,8.76926941 Z M20.1617922,1.46160469 C20.5724953,1.46160469 20.9085252,1.78898807 20.9085252,2.19237117 C20.9085252,2.59575426 20.5724953,2.92313764 20.1617922,2.92313764 C19.751089,2.92313764 19.4150591,2.59575426 19.4150591,2.19237117 C19.4150591,1.78898807 19.751089,1.46160469 20.1617922,1.46160469 Z M6.72059739,10.9615688 C6.72059739,10.1562642 7.39116366,9.50003588 8.21406347,9.50003588 C9.03696329,9.50003588 9.70752956,10.1562642 9.70752956,10.9615688 C9.70752956,11.768335 9.03696329,12.4231018 8.21406347,12.4231018 C7.39116366,12.4231018 6.72059739,11.768335 6.72059739,10.9615688 Z M15.3961419,15.8094736 C14.3656503,16.5387785 13.1559428,16.9041618 11.9477287,16.9041618 C10.7395146,16.9041618 9.52980709,16.5387785 8.49931549,15.8094736 C8.16477909,15.5727053 8.09010579,15.1152454 8.33204729,14.7893236 C8.5739888,14.4634017 9.04144368,14.3903251 9.37448662,14.6256319 C10.9142502,15.7144739 12.9812072,15.717397 14.5209708,14.6256319 C14.8540137,14.3903251 15.3199751,14.4604787 15.5634101,14.7893236 C15.8053516,15.116707 15.7291848,15.5727053 15.3961419,15.8094736 Z M15.6813939,12.4231018 C14.8570006,12.4231018 14.1879278,11.768335 14.1879278,10.9615688 C14.1879278,10.1562642 14.8570006,9.50003588 15.6813939,9.50003588 C16.5057872,9.50003588 17.17486,10.1562642 17.17486,10.9615688 C17.17486,11.768335 16.5057872,12.4231018 15.6813939,12.4231018 Z">
+                </path>
+            </g>
+            <g id="telegram">
+                <path
+                    d="M0.35325945,8.39118643 L4.96166548,10.1197467 L6.74540115,15.8847634 C6.85953464,16.2539919 7.30880189,16.3904678 7.60700228,16.1454544 L10.1758056,14.0408987 C10.4450727,13.8204068 10.8286065,13.8094191 11.1100069,14.0147023 L15.7432129,17.3952437 C16.0622134,17.6282644 16.5141473,17.4525944 16.5941474,17.0652093 L19.9882185,0.65788894 C20.0755519,0.234726654 19.6618181,-0.118288243 19.2608842,0.0375501797 L0.347859443,7.36992887 C-0.118874501,7.55082472 -0.114807829,8.21491347 0.35325945,8.39118643 Z M6.45793411,9.19958987 L15.4644792,3.62484884 C15.6263461,3.52495413 15.7928797,3.74491008 15.6538795,3.8744851 L8.22086975,10.8182057 C7.95960274,11.0626161 7.79106919,11.3897026 7.74333579,11.7447274 L7.49013546,13.6304662 C7.45660208,13.8822464 7.10466829,13.9072368 7.03553487,13.6635634 L6.06173359,10.2248673 C5.95020011,9.83265834 6.11273366,9.41371695 6.45793411,9.19958987 Z"
+                    id="XMLID_497_"></path>
+            </g>
+        </defs>
+    </svg>
+
+    <script src="{% static 'js/legal-termsacb4acb4.js' %}"></script>
+
+
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer__wrapper container">
+                <nav class="footer__menu">
+                    <div class="footer__logo">
+                        <a title="Main page"><img class="footer__logo-img" src="{% static 'images/logo.png' %}"
+                                alt="Legal Trade "></a>
+                    </div><img src="{% static 'images/cryptovalley67616761.svg' %}" alt="" width="120">
+                </nav>
+                <div class="footer__info">
+                    <div class="footer__address">
+                        <div class="footer__address-line">Legal Trade &copy; 2022. All rights reserved.</div>
+                        <!--.footer__address-line #{footer.address}-->
+                        <div class="footer__address-line">General information:&nbsp;<a
+                                href="mailto:info@Legal Trade.com"><span>info@Legal Trade.com</span></a></div>
+
+                        <div class="footer__address-line">Address:&nbsp;<span>20 Cooper Square, New York, NY 10003,
+                                USA.</span></div>
+
+                    </div>
+                    <div class="footer__sub-links">
+                        <a class="footer__sub-link" href="{% url 'terms' %}">Terms of use</a>
+                        <a class="footer__sub-link" href="{% url 'terms' %}">Privacy policy</a>
+                        <a class="footer__sub-link" href="{% url 'terms' %}">Risk disclaimer</a>
+                        <a class="footer__sub-link" href="{% url 'terms' %}">Cookie Policy</a>
+                        <a class="footer__sub-link" href="{% url 'bitcoin-leverage' %}">Leverage</a>
+
+                        <a class="footer__sub-link" href="{% url 'partners' %}">Refer &amp; Earn</a>
+                        <a class="footer__sub-link" href="{% url 'about' %}">About Us</a>
+                        <a class="footer__sub-link" href="{% url 'security' %}">Security</a>
+                        <a class="footer__sub-link" href="{% url 'fees' %}">Fees</a>
+                    </div>
+                    <div class="footer__socials">
+                        <div class="footer__social">
+                            <a href="https://medium.com/Legal Trade" target="_blank" rel="norefferer noopener">
+                                <svg width="24px" height="19px" viewBox="0 0 24 19" alt="Feature4" title="Feature4">
+                                    <use xlink:href="#medium"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__social">
+                            <a href="https://twitter.com/Legal Trade" target="_blank" rel="norefferer noopener">
+                                <svg width="25px" height="19px" viewBox="0 0 25 19" alt="Feature4" title="Feature4">
+                                    <use xlink:href="#twitter"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/Legal Trade/" target="_blank"
+                                rel="norefferer noopener">
+                                <svg width="11px" height="19px" viewBox="0 0 11 19" alt="Feature4" title="Feature4">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__social">
+                            <a href="https://www.reddit.com/r/Legal Trade" target="_blank"
+                                rel="norefferer noopener">
+                                <svg width="24px" height="19px" viewBox="0 0 24 19" alt="Feature4" title="Feature4">
+                                    <use xlink:href="#reddit"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__social">
+                            <a href="https://t.me/Legal Trade" target="_blank" rel="noopener noreferrer">
+                                <svg width="20px" height="18px" viewBox="0 0 20 18" alt="Feature4" title="Feature4">
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/spop.min.js' %}"></script>
+    <script src="{% static 'js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/spop.min.js' %}"></script>
+    <script src="{% static 'js/notification.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/spop.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style-azaleaf86ef86e.css' %}" id="changeTheme">
+    <script src="{% static 'js/jquery.bundlef86e.js' %}"></script>
+    <script src="{% static 'js/scriptsf86e.js' %}"></script>
+    <script src="{% static 'js/chartsf86e.js' %}"></script>
+
+    <style type="text/css">
+        .spop {
+            width: 100%;
+        }
+
+        .notification_inner {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .notification_inner h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .notification_inner h3,
+        .notification_inner p {
+            color: #fff;
+        }
+
+        .spop .spop-close {
+            right: 6px;
+            top: 10px;
+        }
+
+        .notification_inner img {
+            border-radius: 100%;
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+
+</body>
+
+{% endblock content %}
+
+</html>
